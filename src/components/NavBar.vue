@@ -9,7 +9,10 @@ defineProps({
 
 <template>
   <div class="navbar">
-    TRUE
+    <ul>
+        <li><a href="#/">Home</a></li>
+        <li><a href="#/Multiverse">Multiverse Character Creator</a></li>
+    </ul>
   </div>
 </template>
 
@@ -24,9 +27,32 @@ h3 {
   font-size: 1.2rem;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: black;
+}
+
 .navbar {
     width: 100%;
-    background-color: white;
+    background-color: green;
 }
 
 .greetings h1,
