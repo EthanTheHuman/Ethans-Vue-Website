@@ -28,8 +28,15 @@ var RankInfo = ArchetypeInfo?.Ranks[Rank]
   </div>
   <div class="infobox">
     <h2>Archetype</h2>
-    <div>{{ RankInfo.Name }}</div>
-    <div>Description: {{ RankInfo.Description }}</div>
+    <div>{{ ArchetypeInfo.Name }}</div>
+    <div>Description: {{ ArchetypeInfo.Description }}</div>
+    <div>Examples: {{ ArchetypeInfo.Examples.join(', ') }}</div>
+    <div>Proficiencies: {{ ArchetypeInfo.RaisedCaps.join(', ') }}</div>
+  </div>
+  <div class="infobox">
+    <h2>Rank</h2>
+    <div>{{ Rank }}</div>
+    <div>Might: {{RankInfo.Might}} {{RankInfo.MightDef}}</div>
     <div>Fight Damage: {{ RankInfo.MinFightDamage }}-{{ RankInfo.MaxFightDamage }}</div>
   </div>
 </template>
