@@ -5,6 +5,11 @@ defineProps({
     required: true
   }
 })
+import Archetypes from "./Multiverse/Archetypes.json"
+var Rank = 1
+var Archetype = "Bruiser"
+var ArchetypeInfo = Archetypes[Archetype]
+var RankInfo = ArchetypeInfo.Ranks[Rank]
 </script>
 
 <template>
@@ -14,6 +19,8 @@ defineProps({
     <div>Eyes: Skin: Hair:</div>
     <div>Distinguishing Features</div>
     <div>Bio: </div><textarea v-model="Bio" placeholder="Tell us about your character" />
+    <div>Rank: {{ Rank }}</div>
+    <div>Attack: {{ Rank.MaxFightDamage }}-{{ RankInfo.MaxFightDamage }}</div>
   </div>
 </template>
 

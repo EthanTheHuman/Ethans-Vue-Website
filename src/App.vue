@@ -46,8 +46,8 @@ header {
 @media (min-width: 1024px) {
   header {
     display: block;
-    place-items: center;
     width: 100%;
+    margin: 0px;
   }
 
   .logo {
