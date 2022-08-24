@@ -57,7 +57,7 @@ h3 {
     background-color: rgba(255, 0, 0, 0.383);
     border: 1px solid red;
     margin: 10px;
-    width: auto;
+    width: fit-content;
     padding: 5px;
 }
 
@@ -75,7 +75,7 @@ h3 {
 .scrolling-image {
   background: url("https://freedesignfile.com/upload/2015/04/Hexagon-layered-seamless-pattern-vector-material-03.jpg") repeat-x;
   height: 396px;
-  width: 1604px;
+  width: 4010px;
   animation: slide 3s linear infinite;
 }
 @keyframes slide {
