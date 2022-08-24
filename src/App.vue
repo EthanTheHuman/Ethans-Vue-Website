@@ -5,7 +5,7 @@ import TheWelcome from './components/TheWelcome.vue'
 import MultiverseCharacter from './components/MultiverseCharacter.vue'
 
 const routes = {
-  '/': HelloWorld,
+  '/': TheWelcome,
   '/multiverse': MultiverseCharacter
 }
 
@@ -33,7 +33,6 @@ const currentView = computed(() => {
     <a href="#/multiverse">Multiverse character maker</a>
     <a href="#/">Home</a>
     <component :is="currentView" />
-    <TheWelcome />
   </main>
 </template>
 
