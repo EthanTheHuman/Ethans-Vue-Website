@@ -3,8 +3,8 @@ import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 
 const routes = {
-  '/': Home,
-  '/multiverse': Multiverse
+  '/': HelloWorld,
+  '/multiverse': TheWelcome
 }
 
 const currentPath = ref(window.location.hash)
