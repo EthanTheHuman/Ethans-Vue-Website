@@ -6,7 +6,6 @@ defineProps({
   }
 })
 </script>
-<script src="https://unpkg.com/vue-router@4"></script>
 
 <template>
   <div class="greetings">

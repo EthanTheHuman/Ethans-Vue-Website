@@ -1,6 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import Router from 'https://unpkg.com/vue-router@4'
 </script>
 
 <template>
