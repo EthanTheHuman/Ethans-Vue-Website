@@ -45,7 +45,7 @@ h3 {
 .scrolling-image {
   background: url("https://freedesignfile.com/upload/2015/04/Hexagon-layered-seamless-pattern-vector-material-03.jpg") repeat-x;
   height: 396px;
-  width: 802px;
+  width: 1604px;
   animation: slide 3s linear infinite;
 }
 @keyframes slide {
@@ -53,7 +53,7 @@ h3 {
     transform: translate(0);
   }
   100% {
-    transform: translate(-802px); /* The image width */
+    transform: translate(-1604px); /* The image width */
   }
 }
 
