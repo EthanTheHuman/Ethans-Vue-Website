@@ -17,6 +17,7 @@ var RankInfo = ArchetypeInfo?.Ranks[Rank]
         <div class="scrolling-image"></div>
     </div>
   <div class="Biography infobox">
+    <h2>Bio</h2>
     <div>Real Name: </div><input v-model="RealName" placeholder="John Lastname" />
     <div>Height: Weight: Gender:</div>
     <div>Eyes: Skin: Hair:</div>
@@ -24,6 +25,12 @@ var RankInfo = ArchetypeInfo?.Ranks[Rank]
     <div>Bio: </div><textarea v-model="Bio" placeholder="Tell us about your character" />
     <div>Rank: {{ Rank }}</div>
     <div>Attack: {{ RankInfo.MinFightDamage }}-{{ RankInfo.MaxFightDamage }}</div>
+  </div>
+  <div class="infobox">
+    <h2>Archetype</h2>
+    <div>{{ RankInfo.Name }}</div>
+    <div>Description: {{ RankInfo.Description }}</div>
+    <div>Fight Damage: {{ RankInfo.MinFightDamage }}-{{ RankInfo.MaxFightDamage }}</div>
   </div>
 </template>
 
@@ -39,8 +46,10 @@ h3 {
 }
 
 .infobox {
+    color: white;
     background-color: rgba(255, 0, 0, 0.383);
     border: 1px solid red;
+    margin: 0;
 }
 
 .greetings h1,
