@@ -53,6 +53,7 @@ li a:hover {
 .navbar {
     width: 100%;
     background-color: green;
+    border: 1px solid white;
 }
 
 .greetings h1,
