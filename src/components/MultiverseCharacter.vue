@@ -5,6 +5,14 @@ defineProps({
     required: true
   }
 })
+const ArchetypeList = [
+    "Blaster",
+    "Bruiser",
+    "Genius",
+    "Polymath",
+    "Protector",
+    "Striker"
+]
 import Archetypes from "./Multiverse/Archetypes.json"
 var Rank = 1
 var Archetype = "Blaster"
