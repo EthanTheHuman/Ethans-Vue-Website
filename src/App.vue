@@ -30,7 +30,7 @@ const currentView = computed(() => {
   </header>
 
   <main>
-    <a href="#/multiverse">Multiverse character maker</a>
+    <a href="#/multiverse">Multiverse character maker</a> 
     <a href="#/">Home</a>
     <component :is="currentView" />
   </main>
