@@ -45,7 +45,7 @@ header {
 
 @media (min-width: 1024px) {
   header {
-    display: flex;
+    display: block;
     place-items: center;
   }
 
