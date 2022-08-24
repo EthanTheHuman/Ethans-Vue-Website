@@ -56,9 +56,9 @@ h3 {
     color: white;
     background-color: rgba(255, 0, 0, 0.383);
     border: 1px solid red;
-    margin: 0;
+    margin: 10px;
     width: auto;
-    padding: 10px;
+    padding: 5px;
 }
 
 .greetings h1,
