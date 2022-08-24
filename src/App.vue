@@ -47,9 +47,6 @@ header {
   header {
     display: block;
     width: 100%;
-    margin-left: -8px;
-    margin-right: -8px;
-    margin-top: -8px;
     padding: 0;
   }
 
