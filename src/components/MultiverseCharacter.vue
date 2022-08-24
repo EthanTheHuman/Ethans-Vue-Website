@@ -57,6 +57,7 @@ h3 {
     background-color: rgba(255, 0, 0, 0.383);
     border: 1px solid red;
     margin: 0;
+    width: auto;
 }
 
 .greetings h1,
