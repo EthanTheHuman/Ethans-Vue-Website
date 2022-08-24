@@ -2,10 +2,11 @@
 import { ref, computed } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import MultiverseCharacter from './components/MultiverseCharacter.vue'
 
 const routes = {
   '/': HelloWorld,
-  '/multiverse': TheWelcome
+  '/multiverse': MultiverseCharacter
 }
 
 const currentPath = ref(window.location.hash)
