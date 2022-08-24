@@ -53,7 +53,7 @@ li a:hover {
 .navbar {
     width: 100%;
     margin-left: -8px;
-    margin-right: -8px;
+    margin-right: -24px;
     margin-top: -8px;
     margin-bottom: 0px;
     padding: 0;
