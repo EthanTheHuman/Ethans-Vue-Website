@@ -56,7 +56,7 @@ h3 {
     transform: translate(0);
   }
   100% {
-    transform: translate(-1604px); /* The image width */
+    transform: translate(-401px); /* The image width */
   }
 }
 
