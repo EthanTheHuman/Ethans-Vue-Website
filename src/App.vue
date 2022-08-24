@@ -23,7 +23,7 @@ const currentView = computed(() => {
 
 <template>
   <header>
-    </Navbar>
+    <Navbar/>
   </header>
 
   <main>
