@@ -62,7 +62,8 @@ h3 {
 
 .infobox {
     color: white;
-    background-color: rgba(255, 0, 0, 0.383);
+    background-color: rgba(255, 0, 0, 0.204);
+    border-radius: 25px;
     border: 1px solid red;
     margin: 10px;
     width: fit-content;
