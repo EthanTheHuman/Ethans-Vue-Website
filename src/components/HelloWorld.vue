@@ -8,6 +8,7 @@ defineProps({
 </script>
 
 <template>
+  <script src="https://unpkg.com/vue-router@4"></script>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
