@@ -52,6 +52,8 @@ li a:hover {
 
 .navbar {
     width: 100%;
+    margin: 0;
+    padding: 0;
     background-color: green;
     border: 1px solid white;
 }
