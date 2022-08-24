@@ -58,6 +58,7 @@ h3 {
     border: 1px solid red;
     margin: 0;
     width: auto;
+    padding: 10px;
 }
 
 .greetings h1,
