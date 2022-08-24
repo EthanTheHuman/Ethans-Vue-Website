@@ -16,7 +16,7 @@ var RankInfo = ArchetypeInfo?.Ranks[Rank]
     <div class="scrolling-image-container">
         <div class="scrolling-image"></div>
     </div>
-  <div class="Biography">
+  <div class="Biography infobox">
     <div>Real Name: </div><input v-model="RealName" placeholder="John Lastname" />
     <div>Height: Weight: Gender:</div>
     <div>Eyes: Skin: Hair:</div>
@@ -36,6 +36,11 @@ h1 {
 
 h3 {
   font-size: 1.2rem;
+}
+
+.infobox {
+    background-color: rgba(255, 0, 0, 0.383);
+    border: 1px solid red;
 }
 
 .greetings h1,
