@@ -13,6 +13,9 @@ var RankInfo = ArchetypeInfo?.Ranks[Rank]
 </script>
 
 <template>
+    <div class="scrolling-image-container">
+        <div class="scrolling-image"></div>
+    </div>
   <div class="Biography">
     <div>Real Name: </div><input v-model="RealName" placeholder="John Lastname" />
     <div>Height: Weight: Gender:</div>
@@ -38,6 +41,20 @@ h3 {
 .greetings h1,
 .greetings h3 {
   text-align: center;
+}
+.scrolling-image {
+  background: url("https://freedesignfile.com/upload/2015/04/Hexagon-layered-seamless-pattern-vector-material-03.jpg") repeat-x;
+  height: 396px;
+  width: 802px;
+  animation: slide 3s linear infinite;
+}
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-802px); /* The image width */
+  }
 }
 
 @media (min-width: 1024px) {

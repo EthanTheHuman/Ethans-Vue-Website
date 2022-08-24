@@ -58,7 +58,7 @@ li a:hover {
     margin-bottom: 0px;
     padding: 0;
     background-color: green;
-    border: 1px solid white;
+    border: 0px 0px 1px 0px solid white;
 }
 
 .greetings h1,
