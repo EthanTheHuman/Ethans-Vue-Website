@@ -47,7 +47,8 @@ header {
   header {
     display: block;
     width: 100%;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
   }
 
   .logo {

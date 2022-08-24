@@ -20,7 +20,7 @@ var RankInfo = ArchetypeInfo?.Ranks[Rank]
     <div>Distinguishing Features</div>
     <div>Bio: </div><textarea v-model="Bio" placeholder="Tell us about your character" />
     <div>Rank: {{ Rank }}</div>
-    <div>Attack: {{ RankInfo.MaxFightDamage }}-{{ RankInfo.MaxFightDamage }}</div>
+    <div>Attack: {{ RankInfo.MinFightDamage }}-{{ RankInfo.MaxFightDamage }}</div>
   </div>
 </template>
 
