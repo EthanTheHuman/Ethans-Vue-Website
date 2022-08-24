@@ -47,6 +47,7 @@ header {
   header {
     display: block;
     place-items: center;
+    sidth: 100%;
   }
 
   .logo {
