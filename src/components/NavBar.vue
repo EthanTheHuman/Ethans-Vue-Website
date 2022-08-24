@@ -11,7 +11,7 @@ defineProps({
   <div class="navbar">
     <ul>
         <li><a href="#/">Home</a></li>
-        <li><a href="#/Multiverse">Multiverse Character Creator</a></li>
+        <li><a href="#/multiverse">Multiverse Character Creator</a></li>
     </ul>
   </div>
 </template>

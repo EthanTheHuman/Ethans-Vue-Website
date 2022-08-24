@@ -9,10 +9,11 @@ defineProps({
 
 <template>
   <div class="Biography">
-    <div>Real Name: </div>
+    <div>Real Name: </div><input v-model="RealName" placeholder="John Lastname" />
     <div>Height: Weight: Gender:</div>
     <div>Eyes: Skin: Hair:</div>
     <div>Distinguishing Features</div>
+    <div>Bio: </div><textarea v-model="Bio" placeholder="Tell us about your character" />
   </div>
 </template>
 
