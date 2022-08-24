@@ -6,6 +6,7 @@ defineProps({
   }
 })
 </script>
+<script src="https://unpkg.com/vue-router@4"></script>
 
 <template>
   <div class="greetings">
@@ -13,7 +14,8 @@ defineProps({
     <h3>
       You’ve successfully created a project with
       <a target="_blank" href="https://vitejs.dev/">Vite</a> +
-      <a target="_blank" href="https://vuejs.org/">Vue 3</a>.
+      <a target="_blank" href="https://vuejs.org/">Vue 3</a> +
+      <router-link to"/multiverse">Multiverse Maker<router-link>.
     </h3>
   </div>
 </template>
