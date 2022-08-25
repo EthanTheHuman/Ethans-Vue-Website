@@ -18,8 +18,8 @@ const data = reactive({
 })
 
 var GetData = function () {
-    data.ArchetypeInfo = Archetypes[Archetype || "Blaster"];
-    Rdata.RankInfo = ArchetypeInfo?.Ranks[Rank];
+    data.ArchetypeInfo = Archetypes[data.Archetype || "Blaster"];
+    data.RankInfo = ArchetypeInfo?.Ranks[data.Rank];
 }
 </script>
 
