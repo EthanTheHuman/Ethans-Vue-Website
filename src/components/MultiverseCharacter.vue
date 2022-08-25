@@ -71,7 +71,7 @@ h3 {
     border: 1px solid red;
     margin: 10px;
     width: fit-content;
-    padding: 5px;
+    padding: 10px;
 }
 
 .greetings h1,
