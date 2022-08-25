@@ -1,3 +1,10 @@
+data: {
+    Rank: 1,
+    Archetype: "Blaster",
+    ArchetypeInfo: {},
+    RankInfo: {}
+}
+
 <script setup>
 defineProps({
   msg: {
@@ -14,16 +21,11 @@ const ArchetypeList = [
     "Striker"
 ]
 import Archetypes from "./Multiverse/Archetypes.json"
-var Rank = 1
-var Archetype = "Blaster"
-var ArchetypeInfo = Archetypes[Archetype || "Blaster"]
-var RankInfo = ArchetypeInfo?.Ranks[Rank]
+ArchetypeInfo.$set(Archetypes[Archetype || "Blaster"]);
+RankInfo.$set(ArchetypeInfo?.Ranks[Rank]);
 
 var GetData = function () {
     console.log("Getting Data for Archetype " + Archetype + " Rank " + Rank)
-    $this.set(ArchetypeInfo, Archetypes[Archetype || "Blaster"])
-    $this.set(RankInfo, ArchetypeInfo?.Ranks[Rank])
-}
 </script>
 
 <template>
