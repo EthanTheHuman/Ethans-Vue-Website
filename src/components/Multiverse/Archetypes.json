@@ -1,8 +1,30 @@
 {
+    "---":
+    {
+        "Name": "Blaster",
+        "Description": "A blaster is uncanny at attacking people from afar. It doesn't matter whether they're using arrows, bullets, or optic blasts, they can hit their targets fast and from a (hopefully) safe distance. Ideally they bring down their foes before they get close enough to hurt them back. Many kinds of characters fit this mold, including mercenaries and members of organizations like S.H.I.E.L.D or Hydra who rely on guns and other modern weapons.",
+        "RaisedCaps": ["Agility", "Vigilance"],
+        "Ranks": [
+            { "Rank": 0, "AbilityCap": 5, "Might": 2, "MightDef": 12, "Agility": 3, "AgilityDef": 14, "Resilience": 1, "ResilienceDef": 12, "Vigilance": 2, "VigilanceDef": 13, "Ego": 2, "EgoDef": 13, "Logic": 2, "LogicDef": 13, "MinFightDamage": 1, "MaxFightDamage": 6, "Health": 4, "Focus": 6 },
+            { "Rank": 1, "AbilityCap": 5, "Might": 2, "MightDef": 12, "Agility": 3, "AgilityDef": 14, "Resilience": 1, "ResilienceDef": 12, "Vigilance": 2, "VigilanceDef": 13, "Ego": 2, "EgoDef": 13, "Logic": 2, "LogicDef": 13, "MinFightDamage": 1, "MaxFightDamage": 6, "Health": 4, "Focus": 6 }
+        ],
+        "Examples": ["Bullseye", "Cyclops", "Dazzler", "Havok", "Hawkeye (Clint Barton)", "Hawkeye (Kate Bishop)", "Jubilee", "Human Torch"]
+    },
     "Blaster":
     {
         "Name": "Blaster",
         "Description": "A blaster is uncanny at attacking people from afar. It doesn't matter whether they're using arrows, bullets, or optic blasts, they can hit their targets fast and from a (hopefully) safe distance. Ideally they bring down their foes before they get close enough to hurt them back. Many kinds of characters fit this mold, including mercenaries and members of organizations like S.H.I.E.L.D or Hydra who rely on guns and other modern weapons.",
+        "RaisedCaps": ["Agility", "Vigilance"],
+        "Ranks": [
+            { "Rank": 0, "AbilityCap": 5, "Might": 2, "MightDef": 12, "Agility": 3, "AgilityDef": 14, "Resilience": 1, "ResilienceDef": 12, "Vigilance": 2, "VigilanceDef": 13, "Ego": 2, "EgoDef": 13, "Logic": 2, "LogicDef": 13, "MinFightDamage": 1, "MaxFightDamage": 6, "Health": 4, "Focus": 6 },
+            { "Rank": 1, "AbilityCap": 5, "Might": 2, "MightDef": 12, "Agility": 3, "AgilityDef": 14, "Resilience": 1, "ResilienceDef": 12, "Vigilance": 2, "VigilanceDef": 13, "Ego": 2, "EgoDef": 13, "Logic": 2, "LogicDef": 13, "MinFightDamage": 1, "MaxFightDamage": 6, "Health": 4, "Focus": 6 }
+        ],
+        "Examples": ["Bullseye", "Cyclops", "Dazzler", "Havok", "Hawkeye (Clint Barton)", "Hawkeye (Kate Bishop)", "Jubilee", "Human Torch"]
+    },
+    "Bruiser":
+    {
+        "Name": "Bruiser",
+        "Description": "A bruiser is uncanny at attacking people from afar. It doesn't matter whether they're using arrows, bullets, or optic blasts, they can hit their targets fast and from a (hopefully) safe distance. Ideally they bring down their foes before they get close enough to hurt them back. Many kinds of characters fit this mold, including mercenaries and members of organizations like S.H.I.E.L.D or Hydra who rely on guns and other modern weapons.",
         "RaisedCaps": ["Agility", "Vigilance"],
         "Ranks": [
             { "Rank": 0, "AbilityCap": 5, "Might": 2, "MightDef": 12, "Agility": 3, "AgilityDef": 14, "Resilience": 1, "ResilienceDef": 12, "Vigilance": 2, "VigilanceDef": 13, "Ego": 2, "EgoDef": 13, "Logic": 2, "LogicDef": 13, "MinFightDamage": 1, "MaxFightDamage": 6, "Health": 4, "Focus": 6 },

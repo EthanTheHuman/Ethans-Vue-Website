@@ -18,6 +18,16 @@ var Rank = 1
 var Archetype = "Blaster"
 var ArchetypeInfo = Archetypes[Archetype || "Blaster"]
 var RankInfo = ArchetypeInfo?.Ranks[Rank]
+
+var GetData = function () {
+    return {
+        ArchetypeList: ArchetypeList,
+        Archetype: Archetype,
+        ArchetypeInfo: ArchetypeInfo,
+        Rank: Rank,
+        RankInfo: RankInfo
+    }
+}
 </script>
 
 <template>
@@ -37,8 +47,8 @@ var RankInfo = ArchetypeInfo?.Ranks[Rank]
   <div class="infobox">
     <h2>Archetype</h2>
     <select v-model="selected">
-        <option disabled value="">Please select your archetype</option>
-        <option v-for="Archetype in ArchetypeList" :value="Archetype">{{ Archetype }}</option>
+        <option disabled value="---">Please select your archetype</option>
+        <option v-for="Archetype in ArchetypeList" :value="Archetype" @change="GetData()">{{ Archetype }}</option>
     </select>
     <div>{{ ArchetypeInfo.Name }}</div>
     <div>Description: {{ ArchetypeInfo.Description }}</div>
