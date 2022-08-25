@@ -27,8 +27,8 @@ const RankInfo = reactive({
 
 var GetData = function () {
     console.log("Getting Data for Archetype " + $this.Archetype + " Rank " + $this.Rank);
-    ArchetypeInfo.$set(Archetypes[Archetype || "Blaster"]);
-    RankInfo.$set(ArchetypeInfo?.Ranks[Rank]);
+    ArchetypeInfo = Archetypes[Archetype || "Blaster"];
+    RankInfo = ArchetypeInfo?.Ranks[Rank];
 }
 </script>
 
