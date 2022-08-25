@@ -46,9 +46,9 @@ var GetData = function () {
   </div>
   <div class="infobox">
     <h2>Archetype</h2>
-    <select v-model="selected">
+    <select v-model="Archetype">
         <option disabled value="---">Please select your archetype</option>
-        <option v-for="Archetype in ArchetypeList" :value="Archetype" v-bind="Archetype" @change="GetData()">{{ Archetype }}</option>
+        <option v-for="Archetype in ArchetypeList" @change="GetData()">{{ Archetype }}</option>
     </select>
     <div>{{ ArchetypeInfo.Name }}</div>
     <div>Description: {{ ArchetypeInfo.Description }}</div>
