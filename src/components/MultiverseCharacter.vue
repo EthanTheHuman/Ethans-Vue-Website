@@ -1,11 +1,6 @@
-data: {
-    Rank: 1,
-    Archetype: "Blaster",
-    ArchetypeInfo: {},
-    RankInfo: {}
-}
 
 <script setup>
+import { reactive } from 'vue'
 defineProps({
   msg: {
     type: String,
@@ -21,8 +16,14 @@ const ArchetypeList = [
     "Striker"
 ]
 import Archetypes from "./Multiverse/Archetypes.json"
-ArchetypeInfo.$set(Archetypes[Archetype || "Blaster"]);
-RankInfo.$set(ArchetypeInfo?.Ranks[Rank]);
+const Archetype = reactive("Blaster")
+const Rank = reactive(1);
+const ArchetypeInfo = reactive({
+    ArchetypeInfo: Archetypes[ArchetypeInfo || "Blaster"]
+})
+const RankInfo = reactive({
+    RankInfo: ArchetypeInfo?.Ranks[Rank]
+})
 
 var GetData = function () {
     console.log("Getting Data for Archetype " + $this.Archetype + " Rank " + $this.Rank);
