@@ -20,13 +20,9 @@ var ArchetypeInfo = Archetypes[Archetype || "Blaster"]
 var RankInfo = ArchetypeInfo?.Ranks[Rank]
 
 var GetData = function () {
-    return {
-        ArchetypeList: ArchetypeList,
-        Archetype: Archetype,
-        ArchetypeInfo: ArchetypeInfo,
-        Rank: Rank,
-        RankInfo: RankInfo
-    }
+    console.log("Getting Data for Archetype " + Archetype + " Rank " + Rank)
+    ArchetypeInfo = Archetypes[Archetype || "Blaster"]
+    RankInfo = ArchetypeInfo?.Ranks[Rank]
 }
 </script>
 
