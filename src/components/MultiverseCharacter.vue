@@ -10,15 +10,17 @@ const ArchetypeList = [
     "Striker"
 ]
 import Archetypes from "./Multiverse/Archetypes.json"
-const Archetype = reactive("Blaster")
-const Rank = reactive(1);
-const ArchetypeInfo = reactive(Archetypes[Archetype || "Blaster"])
-const RankInfo = reactive(ArchetypeInfo?.Ranks[Rank])
+const data = reactive({
+    Archetype: "Blaster",
+    Rank: 1,
+    ArchetypeInfo: Archetypes["Blaster"],
+    RankInfo: Archetypes["Blaster"].Ranks[1]
+})
 
 var GetData = function () {
     console.log("Getting Data for Archetype " + Archetype + " Rank " + Rank);
-    ArchetypeInfo = Archetypes[Archetype || "Blaster"];
-    RankInfo = ArchetypeInfo?.Ranks[Rank];
+    data.ArchetypeInfo = Archetypes[Archetype || "Blaster"];
+    Rdata.RankInfo = ArchetypeInfo?.Ranks[Rank];
 }
 </script>
 
@@ -34,24 +36,24 @@ var GetData = function () {
     <div>Distinguishing Features</div>
     <div>Bio: </div><textarea v-model="Bio" placeholder="Tell us about your character" />
     <div>Rank: {{ Rank }}</div>
-    <div>Attack: {{ RankInfo.MinFightDamage }}-{{ RankInfo.MaxFightDamage }}</div>
+    <div>Attack: {{ data.RankInfo.MinFightDamage }}-{{ data.RankInfo.MaxFightDamage }}</div>
   </div>
   <div class="infobox">
     <h2>Archetype</h2>
-    <select v-model="Archetype" @change="GetData()">
+    <select v-model="data.Archetype" @change="GetData()">
         <option disabled value="---">Please select your archetype</option>
         <option v-for="Archetype in ArchetypeList">{{ Archetype }}</option>
     </select>
-    <div>{{ ArchetypeInfo.Name }}</div>
-    <div>Description: {{ ArchetypeInfo.Description }}</div>
-    <div>Examples: {{ ArchetypeInfo.Examples.join(', ') }}</div>
-    <div>Proficiencies: {{ ArchetypeInfo.RaisedCaps.join(', ') }}</div>
+    <div>{{ data.ArchetypeInfo.Name }}</div>
+    <div>Description: {{ data.ArchetypeInfo.Description }}</div>
+    <div>Examples: {{ data.ArchetypeInfo.Examples.join(', ') }}</div>
+    <div>Proficiencies: {{ data.ArchetypeInfo.RaisedCaps.join(', ') }}</div>
   </div>
   <div class="infobox">
     <h2>Rank</h2>
-    <div>{{ Rank }}</div>
-    <div>Might: {{RankInfo.Might}} {{RankInfo.MightDef}}</div>
-    <div>Fight Damage: {{ RankInfo.MinFightDamage }}-{{ RankInfo.MaxFightDamage }}</div>
+    <div>{{ data.Rank }}</div>
+    <div>Might: {{data.RankInfo.Might}} {{data.RankInfo.MightDef}}</div>
+    <div>Fight Damage: {{ data.RankInfo.MinFightDamage }}-{{ data.RankInfo.MaxFightDamage }}</div>
   </div>
 </template>
 
