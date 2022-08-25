@@ -12,12 +12,8 @@ const ArchetypeList = [
 import Archetypes from "./Multiverse/Archetypes.json"
 const Archetype = reactive("Blaster")
 const Rank = reactive(1);
-const ArchetypeInfo = reactive({
-    ArchetypeInfo: Archetypes[Archetype || "Blaster"]
-})
-const RankInfo = reactive({
-    RankInfo: ArchetypeInfo?.Ranks[Rank]
-})
+const ArchetypeInfo = reactive(Archetypes[Archetype || "Blaster"])
+const RankInfo = reactive(ArchetypeInfo?.Ranks[Rank])
 
 var GetData = function () {
     console.log("Getting Data for Archetype " + $this.Archetype + " Rank " + $this.Rank);
