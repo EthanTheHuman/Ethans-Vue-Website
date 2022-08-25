@@ -25,7 +25,10 @@ ArchetypeInfo.$set(Archetypes[Archetype || "Blaster"]);
 RankInfo.$set(ArchetypeInfo?.Ranks[Rank]);
 
 var GetData = function () {
-    console.log("Getting Data for Archetype " + $this.Archetype + " Rank " + $this.Rank)
+    console.log("Getting Data for Archetype " + $this.Archetype + " Rank " + $this.Rank);
+    ArchetypeInfo.$set(Archetypes[Archetype || "Blaster"]);
+    RankInfo.$set(ArchetypeInfo?.Ranks[Rank]);
+}
 </script>
 
 <template>
