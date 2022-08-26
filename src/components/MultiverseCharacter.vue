@@ -91,6 +91,7 @@ h3 {
   top: 0; 
   left: 0;
   z-index: -100;
+  width: 100%;
 }
 .scrolling-image {
   background: url("https://freedesignfile.com/upload/2015/04/Hexagon-layered-seamless-pattern-vector-material-03.jpg") repeat-x;
