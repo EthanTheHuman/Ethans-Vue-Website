@@ -96,9 +96,10 @@ h3 {
   left: 0;
   z-index: -100;
   width: 100%;
+  height: 100%;
 }
 .scrolling-image {
-  background: url("https://freedesignfile.com/upload/2015/04/Hexagon-layered-seamless-pattern-vector-material-03.jpg") repeat-x;
+  background: url("https://freedesignfile.com/upload/2015/04/Hexagon-layered-seamless-pattern-vector-material-03.jpg") repeat;
   height: 396px;
   width: 4010px;
   animation: slide 3s linear infinite;
