@@ -78,6 +78,7 @@ h3 {
 
 .archetype-info {
   margin: 0px;
+  width: 100%;
   text-align: center;
   background-color: red;
   border: 1px solid white;
