@@ -79,6 +79,7 @@ h3 {
 .archetype-info {
   margin: 0px;
   align-items: center;
+  background-color: black;
 }
 
 .greetings h1,
