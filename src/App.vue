@@ -28,8 +28,6 @@ const currentView = computed(() => {
   </header>
 
   <main>
-    <a href="#/">Home</a>&nbsp;
-    <a href="#/multiverse">Multiverse character maker</a> 
     <component :is="currentView" />
   </main>
 </template>
