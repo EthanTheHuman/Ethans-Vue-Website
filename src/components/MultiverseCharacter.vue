@@ -27,6 +27,16 @@ var GetData = function () {
     <div class="scrolling-image-container">
         <div class="scrolling-image"></div>
     </div>
+  <div class="archetype-info infobox">
+    <h2>Archetype</h2>
+    <select v-model="data.Archetype" @change="GetData()">
+        <option disabled value="---">Please select your archetype</option>
+        <option v-for="Archetype in ArchetypeList">{{ Archetype }}</option>
+    </select>
+    <div>{{ data.ArchetypeInfo.Name }}</div>
+    <div>Description: {{ data.ArchetypeInfo.Description }}</div>
+    <div>Examples: {{ data.ArchetypeInfo.Examples.join(', ') }} Proficiencies: {{ data.ArchetypeInfo.RaisedCaps.join(', ') }}</div>
+  </div>
   <div class="Biography infobox">
     <h2>Bio</h2>
     <div>Real Name: </div><input v-model="RealName" placeholder="John Lastname" />
@@ -36,17 +46,6 @@ var GetData = function () {
     <div>Bio: </div><textarea v-model="Bio" placeholder="Tell us about your character" />
     <div>Rank: {{ Rank }}</div>
     <div>Attack: {{ data.RankInfo.MinFightDamage }}-{{ data.RankInfo.MaxFightDamage }}</div>
-  </div>
-  <div class="infobox">
-    <h2>Archetype</h2>
-    <select v-model="data.Archetype" @change="GetData()">
-        <option disabled value="---">Please select your archetype</option>
-        <option v-for="Archetype in ArchetypeList">{{ Archetype }}</option>
-    </select>
-    <div>{{ data.ArchetypeInfo.Name }}</div>
-    <div>Description: {{ data.ArchetypeInfo.Description }}</div>
-    <div>Examples: {{ data.ArchetypeInfo.Examples.join(', ') }}</div>
-    <div>Proficiencies: {{ data.ArchetypeInfo.RaisedCaps.join(', ') }}</div>
   </div>
   <div class="infobox">
     <h2>Rank</h2>
@@ -75,6 +74,11 @@ h3 {
     margin: 10px;
     width: fit-content;
     padding: 10px;
+}
+
+.archetype-info {
+  margin: 0px;
+  align-items: center;
 }
 
 .greetings h1,
