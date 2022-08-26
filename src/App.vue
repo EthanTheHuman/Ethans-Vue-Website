@@ -7,7 +7,8 @@ import MultiverseCharacter from './components/MultiverseCharacter.vue'
 
 const routes = {
   '/': TheWelcome,
-  '/multiverse': MultiverseCharacter
+  '/multiverse': MultiverseCharacter,
+  '/Multiverse': MultiverseCharacter
 }
 
 const currentPath = ref(window.location.hash)

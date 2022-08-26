@@ -1,14 +1,14 @@
 {
     "---":
     {
-        "Name": "Blaster",
-        "Description": "A blaster is uncanny at attacking people from afar. It doesn't matter whether they're using arrows, bullets, or optic blasts, they can hit their targets fast and from a (hopefully) safe distance. Ideally they bring down their foes before they get close enough to hurt them back. Many kinds of characters fit this mold, including mercenaries and members of organizations like S.H.I.E.L.D or Hydra who rely on guns and other modern weapons.",
-        "RaisedCaps": ["Agility", "Vigilance"],
+        "Name": "---",
+        "Description": "---",
+        "RaisedCaps": ["---"],
         "Ranks": [
-            { "Rank": 0, "AbilityCap": 5, "Might": 2, "MightDef": 12, "Agility": 3, "AgilityDef": 14, "Resilience": 1, "ResilienceDef": 12, "Vigilance": 2, "VigilanceDef": 13, "Ego": 2, "EgoDef": 13, "Logic": 2, "LogicDef": 13, "MinFightDamage": 1, "MaxFightDamage": 6, "Health": 4, "Focus": 6 },
-            { "Rank": 1, "AbilityCap": 5, "Might": 2, "MightDef": 12, "Agility": 3, "AgilityDef": 14, "Resilience": 1, "ResilienceDef": 12, "Vigilance": 2, "VigilanceDef": 13, "Ego": 2, "EgoDef": 13, "Logic": 2, "LogicDef": 13, "MinFightDamage": 1, "MaxFightDamage": 6, "Health": 4, "Focus": 6 }
+            { "Rank": 0, "AbilityCap": 0, "Might": 0, "MightDef": 0, "Agility": 0, "AgilityDef": 0, "Resilience": 0, "ResilienceDef": 0, "Vigilance": 0, "VigilanceDef": 0, "Ego": 0, "EgoDef": 0, "Logic": 0, "LogicDef": 0, "MinFightDamage": 0, "MaxFightDamage": 0, "Health": 0, "Focus": 0 },
+            { "Rank": 0, "AbilityCap": 0, "Might": 0, "MightDef": 0, "Agility": 0, "AgilityDef": 0, "Resilience": 0, "ResilienceDef": 0, "Vigilance": 0, "VigilanceDef": 0, "Ego": 0, "EgoDef": 0, "Logic": 0, "LogicDef": 0, "MinFightDamage": 0, "MaxFightDamage": 0, "Health": 0, "Focus": 0 }
         ],
-        "Examples": ["Bullseye", "Cyclops", "Dazzler", "Havok", "Hawkeye (Clint Barton)", "Hawkeye (Kate Bishop)", "Jubilee", "Human Torch"]
+        "Examples": ["---"]
     },
     "Blaster":
     {
@@ -24,12 +24,56 @@
     "Bruiser":
     {
         "Name": "Bruiser",
-        "Description": "A bruiser is uncanny at attacking people from afar. It doesn't matter whether they're using arrows, bullets, or optic blasts, they can hit their targets fast and from a (hopefully) safe distance. Ideally they bring down their foes before they get close enough to hurt them back. Many kinds of characters fit this mold, including mercenaries and members of organizations like S.H.I.E.L.D or Hydra who rely on guns and other modern weapons.",
-        "RaisedCaps": ["Agility", "Vigilance"],
+        "Description": "A bruiser uses their incredible toughness to absorb damage and their amazing strength to deal it out.",
+        "RaisedCaps": ["Might", "Resilience"],
         "Ranks": [
             { "Rank": 0, "AbilityCap": 5, "Might": 2, "MightDef": 12, "Agility": 3, "AgilityDef": 14, "Resilience": 1, "ResilienceDef": 12, "Vigilance": 2, "VigilanceDef": 13, "Ego": 2, "EgoDef": 13, "Logic": 2, "LogicDef": 13, "MinFightDamage": 1, "MaxFightDamage": 6, "Health": 4, "Focus": 6 },
             { "Rank": 1, "AbilityCap": 5, "Might": 2, "MightDef": 12, "Agility": 3, "AgilityDef": 14, "Resilience": 1, "ResilienceDef": 12, "Vigilance": 2, "VigilanceDef": 13, "Ego": 2, "EgoDef": 13, "Logic": 2, "LogicDef": 13, "MinFightDamage": 1, "MaxFightDamage": 6, "Health": 4, "Focus": 6 }
         ],
-        "Examples": ["Bullseye", "Cyclops", "Dazzler", "Havok", "Hawkeye (Clint Barton)", "Hawkeye (Kate Bishop)", "Jubilee", "Human Torch"]
+        "Examples": ["Colossus", "The Hulk", "Juggernaut", "Ms. Marvel", "She-Hulk", "Titania", "The Thing"]
+    },
+    "Genius":
+    {
+        "Name": "Genius",
+        "Description": "A genius is one of the smartest people in the world, able to invent solutions for the thorniest problems on the fly.",
+        "RaisedCaps": ["Vigilance", "Logic"],
+        "Ranks": [
+            { "Rank": 0, "AbilityCap": 5, "Might": 2, "MightDef": 12, "Agility": 3, "AgilityDef": 14, "Resilience": 1, "ResilienceDef": 12, "Vigilance": 2, "VigilanceDef": 13, "Ego": 2, "EgoDef": 13, "Logic": 2, "LogicDef": 13, "MinFightDamage": 1, "MaxFightDamage": 6, "Health": 4, "Focus": 6 },
+            { "Rank": 1, "AbilityCap": 5, "Might": 2, "MightDef": 12, "Agility": 3, "AgilityDef": 14, "Resilience": 1, "ResilienceDef": 12, "Vigilance": 2, "VigilanceDef": 13, "Ego": 2, "EgoDef": 13, "Logic": 2, "LogicDef": 13, "MinFightDamage": 1, "MaxFightDamage": 6, "Health": 4, "Focus": 6 }
+        ],
+        "Examples": ["Doctor Doom", "Mr Fantastic", "Moon Girl", "Shuri"]
+    },
+    "Polymath":
+    {
+        "Name": "Polymath",
+        "Description": "A polymath is good at all sorts of things, often in amazing ways that don’t typically match up.",
+        "RaisedCaps": ["Any", "Any"],
+        "Ranks": [
+            { "Rank": 0, "AbilityCap": 5, "Might": 2, "MightDef": 12, "Agility": 3, "AgilityDef": 14, "Resilience": 1, "ResilienceDef": 12, "Vigilance": 2, "VigilanceDef": 13, "Ego": 2, "EgoDef": 13, "Logic": 2, "LogicDef": 13, "MinFightDamage": 1, "MaxFightDamage": 6, "Health": 4, "Focus": 6 },
+            { "Rank": 1, "AbilityCap": 5, "Might": 2, "MightDef": 12, "Agility": 3, "AgilityDef": 14, "Resilience": 1, "ResilienceDef": 12, "Vigilance": 2, "VigilanceDef": 13, "Ego": 2, "EgoDef": 13, "Logic": 2, "LogicDef": 13, "MinFightDamage": 1, "MaxFightDamage": 6, "Health": 4, "Focus": 6 }
+        ],
+        "Examples": ["Captain America", "Captain Marvel", "Iron Man", "Misty Knight", "Spider-Man", "Thor"]
+    },
+    "Protector":
+    {
+        "Name": "Protector",
+        "Description": "A protector is excellent at coordinating teams and getting people to work together to be their best.",
+        "RaisedCaps": ["Vigilance", "Ego"],
+        "Ranks": [
+            { "Rank": 0, "AbilityCap": 5, "Might": 2, "MightDef": 12, "Agility": 3, "AgilityDef": 14, "Resilience": 1, "ResilienceDef": 12, "Vigilance": 2, "VigilanceDef": 13, "Ego": 2, "EgoDef": 13, "Logic": 2, "LogicDef": 13, "MinFightDamage": 1, "MaxFightDamage": 6, "Health": 4, "Focus": 6 },
+            { "Rank": 1, "AbilityCap": 5, "Might": 2, "MightDef": 12, "Agility": 3, "AgilityDef": 14, "Resilience": 1, "ResilienceDef": 12, "Vigilance": 2, "VigilanceDef": 13, "Ego": 2, "EgoDef": 13, "Logic": 2, "LogicDef": 13, "MinFightDamage": 1, "MaxFightDamage": 6, "Health": 4, "Focus": 6 }
+        ],
+        "Examples": ["Bishop", "Doctor Strange", "Invisible Woman", "Karma", "Kitty Pryde", "Professor X", "Wasp"]
+    },
+    "Striker":
+    {
+        "Name": "Striker",
+        "Description": "A striker hits hard and fast, relying on their reflexes and training to keep them out of harm’s way.",
+        "RaisedCaps": ["Might", "Agility"],
+        "Ranks": [
+            { "Rank": 0, "AbilityCap": 5, "Might": 2, "MightDef": 12, "Agility": 3, "AgilityDef": 14, "Resilience": 1, "ResilienceDef": 12, "Vigilance": 2, "VigilanceDef": 13, "Ego": 2, "EgoDef": 13, "Logic": 2, "LogicDef": 13, "MinFightDamage": 1, "MaxFightDamage": 6, "Health": 4, "Focus": 6 },
+            { "Rank": 1, "AbilityCap": 5, "Might": 2, "MightDef": 12, "Agility": 3, "AgilityDef": 14, "Resilience": 1, "ResilienceDef": 12, "Vigilance": 2, "VigilanceDef": 13, "Ego": 2, "EgoDef": 13, "Logic": 2, "LogicDef": 13, "MinFightDamage": 1, "MaxFightDamage": 6, "Health": 4, "Focus": 6 }
+        ],
+        "Examples": ["Blade", "Daredevil", "Elektra", "Iron Fist", "White Tiger", "Wolverine"]
     }
 }
