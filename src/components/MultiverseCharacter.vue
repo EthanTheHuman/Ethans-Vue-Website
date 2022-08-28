@@ -56,15 +56,15 @@ var GetData = function () {
     <div>Examples: {{ data.ArchetypeInfo.Examples.join(', ') }} Proficiencies: {{ data.ArchetypeInfo.RaisedCaps.join(', ') }}</div>
   </div>
   <div class="row">
-    <div class="infobox">
+    <div class="infobox" style="text-align: center;">
     <h2>ABILITIES</h2>
-      <table style="text-align: center;">
+      <table>
         <tr>
-          <th>Total Action Modifier</th>
-          <th>Archetype Action Modifier</th>
-          <th>Ability Score</th>
-          <th>Archetype Defense Score</th>
-          <th>Total Defense Score</th>
+          <th>Total Score</th>
+          <th>Modifier</th>
+          <th>Score</th>
+          <th>Defense</th>
+          <th>Total Defense</th>
         </tr>
         <tr>
           <td></td>
@@ -82,9 +82,9 @@ var GetData = function () {
         </tr>
         <tr>
           <td></td>
-          <td>{{ data.RankInfo.Resiliance }}</td>
-          <td>RESILIANCE</td>
-          <td>{{ data.RankInfo.ResilianceDef }}</td>
+          <td>{{ data.RankInfo.Resilience }}</td>
+          <td>RESILIENCE</td>
+          <td>{{ data.RankInfo.ResilienceDef }}</td>
           <td></td>
         </tr>
         <tr>
@@ -122,17 +122,17 @@ var GetData = function () {
     <h2>Biography</h2>
     <div>Real Name: </div><input v-model="RealName" placeholder="John Lastname" />
     <div>Gender: </div><input v-model="RealName" placeholder="Male" />
-    <div>Height: </div><input v-model="RealName" placeholder="Male" />
-    <div>Weight: </div><input v-model="RealName" placeholder="Male" />
-    <div>Eyes: </div><input v-model="RealName" placeholder="Male" />
-    <div>Skin: </div><input v-model="RealName" placeholder="Male" />
-    <div>Hair: </div><input v-model="RealName" placeholder="Male" />
-    <div>Distinguishing Features: </div><textarea v-model="Bio" placeholder="Tell us about your character" />
-    <div>Occupation: </div><input v-model="RealName" placeholder="Male" />
-    <div>Teams: </div><input v-model="RealName" placeholder="Male" />
-    <div>Base: </div><input v-model="RealName" placeholder="Male" />
-    <div>History: </div><textarea v-model="Bio" placeholder="Tell us about your character" />
-    <div>Personality: </div><textarea v-model="Bio" placeholder="Tell us about your character" />
+    <div>Height: </div><input v-model="RealName" placeholder="6'0" />
+    <div>Weight: </div><input v-model="RealName" placeholder="205 lbs." />
+    <div>Eyes: </div><input v-model="RealName" placeholder="Brown" />
+    <div>Skin: </div><input v-model="RealName" placeholder="White" />
+    <div>Hair: </div><input v-model="RealName" placeholder="Brown" />
+    <div>Distinguishing Features: </div><textarea v-model="Bio" placeholder="What makes your character stand out?" />
+    <div>Occupation: </div><input v-model="RealName" placeholder="Adventurer" />
+    <div>Teams: </div><input v-model="RealName" placeholder="Avengers probably" />
+    <div>Base: </div><input v-model="RealName" placeholder="Mobile" />
+    <div>History: </div><textarea v-model="Bio" placeholder="Tell us about your character's backstory" />
+    <div>Personality: </div><textarea v-model="Bio" placeholder="Tell us about your character's personality" />
     <div>Backstory</div>
     <ul>
       <li></li>
@@ -153,6 +153,11 @@ h1 {
 
 h3 {
   font-size: 1.2rem;
+}
+
+td {
+  border: 2px solid black;
+  padding: 2px;
 }
 
 .infobox {
