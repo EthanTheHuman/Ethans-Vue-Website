@@ -69,42 +69,60 @@ var GetData = function () {
         <tr>
           <td></td>
           <td>{{ data.RankInfo.Might }}</td>
-          <td>MIGHT</td>
+          <td>MIGHT
+            <h2>M</h2>
+            0
+          </td>
           <td>{{ data.RankInfo.MightDef }}</td>
           <td></td>
         </tr>
         <tr>
           <td></td>
           <td>{{ data.RankInfo.Agility }}</td>
-          <td>AGILITY</td>
+          <td>AGILITY
+            <h2>A</h2>
+            0
+          </td>
           <td>{{ data.RankInfo.AgilityDef }}</td>
           <td></td>
         </tr>
         <tr>
           <td></td>
           <td>{{ data.RankInfo.Resilience }}</td>
-          <td>RESILIENCE</td>
+          <td>RESILIENCE
+            <h2>R</h2>
+            0
+          </td>
           <td>{{ data.RankInfo.ResilienceDef }}</td>
           <td></td>
         </tr>
         <tr>
           <td></td>
           <td>{{ data.RankInfo.Vigilance }}</td>
-          <td>VIGILANCE</td>
+          <td>VIGILANCE
+            <h2>V</h2>
+            0
+          </td>
           <td>{{ data.RankInfo.VigilanceDef }}</td>
           <td></td>
         </tr>
         <tr>
           <td></td>
           <td>{{ data.RankInfo.Ego }}</td>
-          <td>EGO</td>
+          <td>EGO
+            <h2>E</h2>
+            0
+          </td>
           <td>{{ data.RankInfo.EgoDef }}</td>
           <td></td>
         </tr>
         <tr>
           <td></td>
           <td>{{ data.RankInfo.Logic }}</td>
-          <td>LOGIC</td>
+          <td>LOGIC
+            <h2>L</h2>
+            0
+          </td>
           <td>{{ data.RankInfo.LogicDef }}</td>
           <td></td>
         </tr>
