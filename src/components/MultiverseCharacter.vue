@@ -32,7 +32,7 @@ var GetData = function () {
     <h1>{{ data.Biography?.Name || "YourName" }}</h1>
   </div>
   <div class="row">
-    <div class="infobox">
+    <div class="infobox" style="width: 33%;">
       <h1>RANK</h1>
       <div class="row">
         <div v-on:click="data.Rank--; GetData();">-</div>
@@ -40,7 +40,7 @@ var GetData = function () {
         <div v-on:click="data.Rank++; GetData();">+</div>
       </div>
     </div>
-    <div class="infobox">
+    <div class="infobox" style="width: 66%;">
       <h1>{{ data.Archetype }}</h1>
     </div>
   </div>
@@ -117,7 +117,10 @@ h3 {
 }
 
 .row {
-  display:inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .greetings h1,
