@@ -51,13 +51,72 @@ var GetData = function () {
   </div>
   <div class="archetype-info infobox">
     <h2>Archetype</h2>
-    <select v-model="data.Archetype" @change="GetData()">
-        <option disabled value="---">Please select your archetype</option>
-        <option v-for="Archetype in ArchetypeList">{{ Archetype }}</option>
-    </select>
     <div>{{ data.ArchetypeInfo?.Name }}</div>
     <div>Description: {{ data.ArchetypeInfo.Description }}</div>
     <div>Examples: {{ data.ArchetypeInfo.Examples.join(', ') }} Proficiencies: {{ data.ArchetypeInfo.RaisedCaps.join(', ') }}</div>
+  </div>
+  <div class="row">
+    <h2>ABILITIES</h2>
+    <div class="infobox">
+      <table>
+        <tr>
+          <th>Total Action Modifier</th>
+          <th>Archetype Action Modifier</th>
+          <th>Ability Score</th>
+          <th>Archetype Defense Score</th>
+          <th>Total Defense Score</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td>data.RankInfo.Might</td>
+          <td>MIGHT</td>
+          <td>data.RankInfo.MightDef</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>data.RankInfo.Agility</td>
+          <td>AGILITY</td>
+          <td>data.RankInfo.AgilityDef</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>data.RankInfo.Resiliance</td>
+          <td>RESILIANCE</td>
+          <td>data.RankInfo.ResilianceDef</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>data.RankInfo.Vigilance</td>
+          <td>VIGILANCE</td>
+          <td>data.RankInfo.VigilanceDef</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>data.RankInfo.Ego</td>
+          <td>EGO</td>
+          <td>data.RankInfo.EgoDef</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>data.RankInfo.Logic</td>
+          <td>LOGIC</td>
+          <td>data.RankInfo.LogicDef</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div class="infobox">
+      <h2>STATS</h2>
+      <div>Fight Damage: {{ data.RankInfo.MinFightDamage }}-{{ data.RankInfo.MaxFightDamage }}</div>
+      <div>Ranged Damage: {{ data.RankInfo.MinRangedDamage }}-{{ data.RankInfo.MaxRangedDamage }}</div>
+      <div>Health: {{ data.RankInfo.Health }}-{{ data.RankInfo.Health }}</div>
+      <div>Focus: {{ data.RankInfo.Focus }}-{{ data.RankInfo.Focus }}</div>
+    </div>
   </div>
   <div class="Biography infobox">
     <h2>Biography</h2>
@@ -82,12 +141,6 @@ var GetData = function () {
     <ul>
       <li></li>
     </ul>
-  </div>
-  <div class="infobox">
-    <h2>Rank</h2>
-    <div>{{ data.Rank }}</div>
-    <div>Might: {{data.RankInfo.Might}} {{data.RankInfo.MightDef}}</div>
-    <div>Fight Damage: {{ data.RankInfo.MinFightDamage }}-{{ data.RankInfo.MaxFightDamage }}</div>
   </div>
 </template>
 
@@ -117,7 +170,7 @@ h3 {
   width: 100%;
   text-align: center;background: rgb(255,0,0);
   background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,0,0,0.1) 100%);
-  border: 1px solid red;
+  border: 2px solid red;
 }
 
 .row {
