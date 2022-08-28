@@ -56,9 +56,9 @@ var GetData = function () {
     <div>Examples: {{ data.ArchetypeInfo.Examples.join(', ') }} Proficiencies: {{ data.ArchetypeInfo.RaisedCaps.join(', ') }}</div>
   </div>
   <div class="row">
-    <h2>ABILITIES</h2>
     <div class="infobox">
-      <table>
+    <h2>ABILITIES</h2>
+      <table style="text-align: center;">
         <tr>
           <th>Total Action Modifier</th>
           <th>Archetype Action Modifier</th>
@@ -68,44 +68,44 @@ var GetData = function () {
         </tr>
         <tr>
           <td></td>
-          <td>data.RankInfo.Might</td>
+          <td>{{ data.RankInfo.Might }}</td>
           <td>MIGHT</td>
-          <td>data.RankInfo.MightDef</td>
+          <td>{{ data.RankInfo.MightDef }}</td>
           <td></td>
         </tr>
         <tr>
           <td></td>
-          <td>data.RankInfo.Agility</td>
+          <td>{{ data.RankInfo.Agility }}</td>
           <td>AGILITY</td>
-          <td>data.RankInfo.AgilityDef</td>
+          <td>{{ data.RankInfo.AgilityDef }}</td>
           <td></td>
         </tr>
         <tr>
           <td></td>
-          <td>data.RankInfo.Resiliance</td>
+          <td>{{ data.RankInfo.Resiliance }}</td>
           <td>RESILIANCE</td>
-          <td>data.RankInfo.ResilianceDef</td>
+          <td>{{ data.RankInfo.ResilianceDef }}</td>
           <td></td>
         </tr>
         <tr>
           <td></td>
-          <td>data.RankInfo.Vigilance</td>
+          <td>{{ data.RankInfo.Vigilance }}</td>
           <td>VIGILANCE</td>
-          <td>data.RankInfo.VigilanceDef</td>
+          <td>{{ data.RankInfo.VigilanceDef }}</td>
           <td></td>
         </tr>
         <tr>
           <td></td>
-          <td>data.RankInfo.Ego</td>
+          <td>{{ data.RankInfo.Ego }}</td>
           <td>EGO</td>
-          <td>data.RankInfo.EgoDef</td>
+          <td>{{ data.RankInfo.EgoDef }}</td>
           <td></td>
         </tr>
         <tr>
           <td></td>
-          <td>data.RankInfo.Logic</td>
+          <td>{{ data.RankInfo.Logic }}</td>
           <td>LOGIC</td>
-          <td>data.RankInfo.LogicDef</td>
+          <td>{{ data.RankInfo.LogicDef }}</td>
           <td></td>
         </tr>
       </table>
@@ -114,8 +114,8 @@ var GetData = function () {
       <h2>STATS</h2>
       <div>Fight Damage: {{ data.RankInfo.MinFightDamage }}-{{ data.RankInfo.MaxFightDamage }}</div>
       <div>Ranged Damage: {{ data.RankInfo.MinRangedDamage }}-{{ data.RankInfo.MaxRangedDamage }}</div>
-      <div>Health: {{ data.RankInfo.Health }}-{{ data.RankInfo.Health }}</div>
-      <div>Focus: {{ data.RankInfo.Focus }}-{{ data.RankInfo.Focus }}</div>
+      <div>Health: {{ data.RankInfo.Health }}/{{ data.RankInfo.Health }}</div>
+      <div>Focus: {{ data.RankInfo.Focus }}/{{ data.RankInfo.Focus }}</div>
     </div>
   </div>
   <div class="Biography infobox">
