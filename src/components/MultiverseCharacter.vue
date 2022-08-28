@@ -1,6 +1,7 @@
 
 <script setup>
 import { reactive } from 'vue'
+import Archetypes from "./Multiverse/Archetypes.json"
 const ArchetypeList = [
     "Blaster",
     "Bruiser",
@@ -9,7 +10,6 @@ const ArchetypeList = [
     "Protector",
     "Striker"
 ]
-import Archetypes from "./Multiverse/Archetypes.json"
 const data = reactive({
     Archetype: "Blaster",
     Rank: 1,
@@ -18,15 +18,28 @@ const data = reactive({
 })
 
 var GetData = function () {
+    data.Rank = Math.min(Math.max(data.Rank, 1), 25);
     data.ArchetypeInfo = Archetypes[data.Archetype || "Blaster"];
-    data.RankInfo = data.ArchetypeInfo?.Ranks[data.Rank];
+    data.RankInfo = data.ArchetypeInfo?.Ranks[data.Rank] || Archetypes["Blaster"].Ranks[0];
 }
 </script>
 
 <template>
-    <div class="scrolling-image-container">
-        <div class="scrolling-image"></div>
-    </div>
+  <div class="scrolling-image-container">
+      <div class="scrolling-image"></div>
+  </div>
+  <div class="archetype-info infobox">
+    <h1>{{ data.Biography.Name || "YourName" }}</h1>
+  </div>
+  <div class="infobox">
+    <h1>RANK</h1>
+    <div v-on:click="data.Rank--; GetData();">+</div>
+    <h1>{{ data.Rank }}</h1>
+    <div v-on:click="data.Rank++; GetData();">-</div>
+  </div>
+  <div class="infobox">
+    <h1>{{ data.data.Archetype }}</h1>
+  </div>
   <div class="archetype-info infobox">
     <h2>Archetype</h2>
     <select v-model="data.Archetype" @change="GetData()">
@@ -38,14 +51,28 @@ var GetData = function () {
     <div>Examples: {{ data.ArchetypeInfo.Examples.join(', ') }} Proficiencies: {{ data.ArchetypeInfo.RaisedCaps.join(', ') }}</div>
   </div>
   <div class="Biography infobox">
-    <h2>Bio</h2>
+    <h2>Biography</h2>
     <div>Real Name: </div><input v-model="RealName" placeholder="John Lastname" />
-    <div>Height: Weight: Gender:</div>
-    <div>Eyes: Skin: Hair:</div>
-    <div>Distinguishing Features</div>
-    <div>Bio: </div><textarea v-model="Bio" placeholder="Tell us about your character" />
-    <div>Rank: {{ Rank }}</div>
-    <div>Attack: {{ data.RankInfo.MinFightDamage }}-{{ data.RankInfo.MaxFightDamage }}</div>
+    <div>Gender: </div><input v-model="RealName" placeholder="Male" />
+    <div>Height: </div><input v-model="RealName" placeholder="Male" />
+    <div>Weight: </div><input v-model="RealName" placeholder="Male" />
+    <div>Eyes: </div><input v-model="RealName" placeholder="Male" />
+    <div>Skin: </div><input v-model="RealName" placeholder="Male" />
+    <div>Hair: </div><input v-model="RealName" placeholder="Male" />
+    <div>Distinguishing Features: </div><textarea v-model="Bio" placeholder="Tell us about your character" />
+    <div>Occupation: </div><input v-model="RealName" placeholder="Male" />
+    <div>Teams: </div><input v-model="RealName" placeholder="Male" />
+    <div>Base: </div><input v-model="RealName" placeholder="Male" />
+    <div>History: </div><textarea v-model="Bio" placeholder="Tell us about your character" />
+    <div>Personality: </div><textarea v-model="Bio" placeholder="Tell us about your character" />
+    <div>Backstory</div>
+    <ul>
+      <li></li>
+    </ul>
+    <div>Traits</div>
+    <ul>
+      <li></li>
+    </ul>
   </div>
   <div class="infobox">
     <h2>Rank</h2>
