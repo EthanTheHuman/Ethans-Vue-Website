@@ -36,7 +36,7 @@ var GetData = function () {
       <h1>RANK</h1>
       <div class="row">
         <div v-on:click="data.Rank--; GetData();">-</div>
-        <h1><input type="number" min="1" max="25" v-model="data.Rank" placeholder="1" /></h1>
+        <h1><input type="number" min="1" max="25" v-model="data.Rank" placeholder="1" @change="GetData()"/></h1>
         <div v-on:click="data.Rank++; GetData();">+</div>
       </div>
     </div>
