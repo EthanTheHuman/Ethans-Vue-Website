@@ -38,7 +38,7 @@ var GetData = function () {
     <div v-on:click="data.Rank++; GetData();">-</div>
   </div>
   <div class="infobox">
-    <h1>{{ data.data.Archetype }}</h1>
+    <h1>{{ data.Archetype }}</h1>
   </div>
   <div class="archetype-info infobox">
     <h2>Archetype</h2>
