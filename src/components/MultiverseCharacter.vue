@@ -29,7 +29,7 @@ var GetData = function () {
       <div class="scrolling-image"></div>
   </div>
   <div class="archetype-info infobox">
-    <h1>{{ data.Biography.Name || "YourName" }}</h1>
+    <h1>{{ data.Biography?.Name || "YourName" }}</h1>
   </div>
   <div class="infobox">
     <h1>RANK</h1>
@@ -46,7 +46,7 @@ var GetData = function () {
         <option disabled value="---">Please select your archetype</option>
         <option v-for="Archetype in ArchetypeList">{{ Archetype }}</option>
     </select>
-    <div>{{ data.ArchetypeInfo.Name }}</div>
+    <div>{{ data.ArchetypeInfo?.Name }}</div>
     <div>Description: {{ data.ArchetypeInfo.Description }}</div>
     <div>Examples: {{ data.ArchetypeInfo.Examples.join(', ') }} Proficiencies: {{ data.ArchetypeInfo.RaisedCaps.join(', ') }}</div>
   </div>
