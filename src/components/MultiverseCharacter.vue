@@ -32,16 +32,21 @@ var GetData = function () {
     <h1>{{ data.Biography?.Name || "YourName" }}</h1>
   </div>
   <div class="row">
-    <div class="infobox" style="width: 33%;">
+    <div class="infobox centered" style="width: 33%;">
       <h1>RANK</h1>
       <div class="row">
         <div v-on:click="data.Rank--; GetData();">-</div>
-        <h1>{{ data.Rank }}</h1>
+        <h1><input type="number" min="1" max="25" v-model="data.Rank" placeholder="1" /></h1>
         <div v-on:click="data.Rank++; GetData();">+</div>
       </div>
     </div>
     <div class="infobox" style="width: 66%;">
-      <h1>{{ data.Archetype }}</h1>
+      <h1>
+        <select v-model="data.Archetype" @change="GetData()">
+          <option disabled value="---">Please select your archetype</option>
+          <option v-for="Archetype in ArchetypeList">{{ Archetype }}</option>
+        </select>
+      </h1>
     </div>
   </div>
   <div class="archetype-info infobox">
@@ -121,6 +126,11 @@ h3 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.centered {
+  align-items: center;
+  text-align: center;
 }
 
 .greetings h1,
