@@ -115,9 +115,8 @@ h3 {
 .archetype-info {
   margin: 0px;
   width: 100%;
-  text-align: center;
-  background: rgb(166,0,0);
-  background: linear-gradient(0deg, rgba(166,0,0,0.8001794467787114) 0%, rgba(255,0,0,0.8982186624649859) 50%, rgba(255,96,96,1) 100%);
+  text-align: center;background: rgb(255,0,0);
+  background: linear-gradient(0deg, rgba(255,0,0,0.1) 0%, rgba(255,0,0,1) 100%);
   border: 1px solid white;
 }
 
