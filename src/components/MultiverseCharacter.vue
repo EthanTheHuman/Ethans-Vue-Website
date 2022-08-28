@@ -31,14 +31,18 @@ var GetData = function () {
   <div class="archetype-info infobox">
     <h1>{{ data.Biography?.Name || "YourName" }}</h1>
   </div>
-  <div class="infobox">
-    <h1>RANK</h1>
-    <div v-on:click="data.Rank--; GetData();">+</div>
-    <h1>{{ data.Rank }}</h1>
-    <div v-on:click="data.Rank++; GetData();">-</div>
-  </div>
-  <div class="infobox">
-    <h1>{{ data.Archetype }}</h1>
+  <div class="row">
+    <div class="infobox">
+      <h1>RANK</h1>
+      <div class="row">
+        <div v-on:click="data.Rank--; GetData();">-</div>
+        <h1>{{ data.Rank }}</h1>
+        <div v-on:click="data.Rank++; GetData();">+</div>
+      </div>
+    </div>
+    <div class="infobox">
+      <h1>{{ data.Archetype }}</h1>
+    </div>
   </div>
   <div class="archetype-info infobox">
     <h2>Archetype</h2>
@@ -110,6 +114,10 @@ h3 {
   background: rgb(166,0,0);
   background: linear-gradient(0deg, rgba(166,0,0,0.8001794467787114) 0%, rgba(255,0,0,0.8982186624649859) 50%, rgba(255,96,96,1) 100%);
   border: 1px solid white;
+}
+
+.row {
+  display:inline-block;
 }
 
 .greetings h1,
