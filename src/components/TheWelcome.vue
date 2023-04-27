@@ -9,6 +9,15 @@
       <p>
         This is still a work in progress as we remake the entire website from scratch using Vue 3! Make sure to check back to see how the website is progressing.
       </p>
+      <div class="mainMenuSelect">
+        <h1>PERSONAL</h1>
+        <a>ABOUT ME</a><br/>
+        <a>PROJECT HISTORY</a><br/>
+        <a>ART GALLERY</a><br/>
+        <h1>SOCIAL</h1>
+        <a>LINKEDIN</a><br/>
+        <a>ITCH.IO</a><br/>
+      </div>
     </div>
   </div>
 </template>
@@ -33,6 +42,27 @@
   line-height: 1.6;
   color: var(--color-text);
   flex: 1;
+  text-align: center;
+}
+.mainMenuSelect {
+  text-align: left;
+  display: block;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 10px;
+}
+.mainMenuSelect h1 {
+  font-size: 1.3rem;
+  color: dodgerblue;
+  margin-left: -5px;
+}
+.mainMenuSelect a {
+  font-size: 1.4rem;
+}
+.mainMenuSelect a:hover {
+  background-color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  color: black;
 }
 
 .firecutin {
