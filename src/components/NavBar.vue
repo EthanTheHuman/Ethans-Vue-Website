@@ -44,16 +44,18 @@ li a{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-radius: 25px;
 }
 
 li a:hover {
     background-color: black;
+    border-radius: 25px;
 }
 
 .navbar {
     width: 100%;
-    background-color: green;
-    border: 0px 0px 10px 0px solid white;
+    background-color: #404040;
+    border-bottom: solid 3px white;
 }
 
 .greetings h1,
