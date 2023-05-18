@@ -36,13 +36,11 @@
 .pagebody {
   display: flex;
   flex-wrap: nowrap;
-  min-width: 100vw;
+  height: 100%;
 }
 .content {
-  width: 100vh;
-  max-width: 800px;
+  width: 100%;
   height: 100%;
-  margin: 0 auto;
   padding: 0 1rem;
   font-size: 1.2rem;
   line-height: 1.6;
@@ -72,7 +70,6 @@
 }
 
 .firecutin {
-  min-height: 100vh;
   max-width: 300px;
   width: 15%;
   background-color: whitesmoke;

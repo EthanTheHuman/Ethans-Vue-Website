@@ -23,40 +23,67 @@ const currentView = computed(() => {
 </script>
 
 <template>
-  <header>
-    <Navbar/>
-  </header>
-
-  <main>
-    <component :is="currentView" />
-  </main>
+  <div class="container">
+    <header class="header">
+      <Navbar/>
+    </header>
+    <section class="content">
+      <div class="content-body">
+        <component :is="currentView" />
+      </div>
+    </section>
+    <footer class="footer">
+      <p>This is the footer.</p>
+    </footer>
+  </div>
 </template>
 
+
 <style scoped>
-header {
-  line-height: 1.5;
+/* Reset */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+
+/* Essentials */
+
+.container {
+  display: table;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: block;
-    width: 100%;
-    padding: 0;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.content {
+  display: table-row;
+  height: 100%;
 }
+
+.content-body {
+  display: table-cell;
+}
+
+
+/* Aesthetics */
+
+.container {
+  width: 100%;
+  height: 100%;
+  color:black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header,
+.footer {
+  background: dodgerblue;
+}
+
+.content-body {
+  overflow: hidden;
+}
+
+
 </style>

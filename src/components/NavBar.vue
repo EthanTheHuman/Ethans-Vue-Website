@@ -12,6 +12,7 @@ defineProps({
     <ul>
         <li><a href="#/">Home</a></li>
         <li><a href="#/multiverse">Multiverse Character Creator</a></li>
+        <li><a href="#/">Ethan.+</a></li>
     </ul>
   </div>
 </template>
@@ -53,7 +54,7 @@ li a:hover {
 }
 
 .navbar {
-    width: 100vh;
+    width: 100%;
     background-color: #404040;
     border-bottom: solid 3px white;
 }
