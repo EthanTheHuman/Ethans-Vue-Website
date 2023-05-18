@@ -17,6 +17,7 @@
         <h1>SOCIAL</h1>
         <a>LINKEDIN</a><br/>
         <a href="https://ethanthehuman.itch.io">ITCH.IO</a><br/>
+        <a href="https://github.com/EthanTheHuman">GITHUB</a><br/>
       </div>
       <h2>In the mean time, check out some of my games from itch.io</h2>
       <iframe frameborder="0" src="https://itch.io/embed/515223?bg_color=2f3c49&amp;fg_color=d7d7e5&amp;link_color=a559f9&amp;border_color=4c4b5c" width="552" height="167"><a href="https://netherpetal.itch.io/last-rites">Last Rites by Netherpetal, EthanTheHuman, AwkwardWhale, James Bennett</a></iframe>
