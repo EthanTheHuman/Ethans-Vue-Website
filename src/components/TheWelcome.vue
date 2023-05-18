@@ -16,7 +16,7 @@
         <a>ART GALLERY</a><br/>
         <h1>SOCIAL</h1>
         <a>LINKEDIN</a><br/>
-        <a>ITCH.IO</a><br/>
+        <a href="https://www.ethanthehuman.itch.io">ITCH.IO</a><br/>
       </div>
     </div>
   </div>
