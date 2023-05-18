@@ -53,7 +53,7 @@ li a:hover {
 }
 
 .navbar {
-    width: 100%;
+    width: 100vh;
     background-color: #404040;
     border-bottom: solid 3px white;
 }

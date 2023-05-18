@@ -39,6 +39,7 @@
   min-width: 100vw;
 }
 .content {
+  width: 100vh;
   max-width: 800px;
   height: 100%;
   margin: 0 auto;
