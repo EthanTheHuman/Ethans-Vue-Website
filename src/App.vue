@@ -85,3 +85,9 @@ body {
   overflow: hidden;
 }
 </style>
+
+<style>
+  :root {
+    --main-color: orange;
+  }
+</style>

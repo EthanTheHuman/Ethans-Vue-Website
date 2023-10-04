@@ -12,11 +12,11 @@ const icons = {
       src="https://images.squarespace-cdn.com/content/v1/5d8979ba31fedf1660dce626/1614467353576-S3JXOXAHTB3NITJ9TI7V/image-asset.gif"
       class="firecutin">
     <div class="content">
-      <h1>Welcome to Ethan's WIP website</h1>
+      <h1>ETHAN.+</h1>
       <p>
         This is still a work in progress as we remake the entire website from scratch using Vue 3! Make sure to check back
         to see how the website is progressing.
-      </p>ß
+      </p>
       <div class="mainMenuSelect">
         <h1>PERSONAL </h1>
         <a class="grayed-out">ABOUT ME</a>
@@ -57,6 +57,19 @@ const icons = {
 </template>
 
 <style scoped>
+
+* {
+  box-sizing: border-box;
+  color: white;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+  color: var(--main-color);
+}
+
 svg {
   fill: currentColor;
   width: 1em;
@@ -68,16 +81,11 @@ svg {
   margin-right: 0.5em;
 }
 
-* {
-  box-sizing: border-box;
-  color: white;
-  margin: 0;
-}
-
 .pagebody {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
+  flex-direction: row-reverse;
   height: 100%;
 }
 
@@ -94,6 +102,7 @@ svg {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: left;
   padding: 0 2rem;
   width: 100%;
   height: 100%;
@@ -101,7 +110,6 @@ svg {
   font-size: 1.2rem;
   line-height: 1.6;
   color: var(--color-text);
-  text-align: center;
 }
 
 .mainMenuSelect {
@@ -110,7 +118,7 @@ svg {
   display: block;
   margin-right: auto;
   margin-top: 20px;
-  padding-left: 5rem;
+  padding-left: 1rem;
 }
 
 .itchLinks {
@@ -123,7 +131,7 @@ svg {
 .mainMenuSelect h1 {
   font-size: 1.4rem;
   margin-bottom: 0;
-  color: dodgerblue;
+  color: var(--main-color);
   margin-left: -5px;
 }
 
@@ -131,7 +139,7 @@ svg {
   display: block;
   width: 100%;
   margin-bottom: 0;
-  padding-left: 1rem;
+  padding-left: 1.4rem;
   font-size: 1.4rem;
 }
 
@@ -140,12 +148,9 @@ svg {
   font-size: 1.5rem;
   color: black;
   fill: black;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 1rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
 }
 
 .mainMenuSelect a:hover svg {
@@ -162,8 +167,30 @@ svg {
   object-fit: cover;
   border-left: solid white 3px;
   border-right: solid white 3px;
-  margin-left: 10%;
   display: flex;
+}
+@media (min-width: 768px) {
+  .mainMenuSelect::before {
+    content: '';   /* This is necessary to make the pseudo-element render */
+    display: block;
+    position: absolute;
+    top: 0;        /* Start from the top of the .content element */
+    bottom: 0;     /* Stretch to the bottom of the .content element */
+    left: 0;       /* Place it at the left side */
+    width: 0.25rem;    /* Width of the line */
+    background-color: var(--main-color);  /* Color of the line; change as needed */
+  }
+
+  .mainMenuSelect a::before {
+    content: '';   /* This is necessary to make the pseudo-element render */
+    display: block;
+    position: absolute;
+    top: 0;        /* Start from the top of the .content element */
+    bottom: 0;     /* Stretch to the bottom of the .content element */
+    left: 0;       /* Place it at the left side */
+    width: 1rem;    /* Width of the line */
+    background-color: var(--main-color);  /* Color of the line; change as needed */
+  }
 }
 
 @media (max-width: 768px) {
