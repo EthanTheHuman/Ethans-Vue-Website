@@ -25,7 +25,7 @@ const currentView = computed(() => {
 <template>
   <div class="container">
     <header class="header">
-      <Navbar/>
+      <Navbar />
     </header>
     <section class="content">
       <div class="content-body">
@@ -71,7 +71,7 @@ body {
 .container {
   width: 100%;
   height: 100%;
-  color:black;
+  color: black;
   height: 100vh;
   width: 100vw;
 }
@@ -84,6 +84,4 @@ body {
 .content-body {
   overflow: hidden;
 }
-
-
 </style>
