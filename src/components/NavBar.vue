@@ -14,7 +14,7 @@ defineProps({
       <li><a href="#/multiverse">Multiverse Character Creator</a></li>
       <li class="spacer" style="flex-grow: 1;"></li>
       <!-- This spacer will grow and push the following items to the right -->
-      <li><a href="#/frens">Frens Selector Sample</a></li>
+      <!-- <li><a href="#/frens">Frens Selector Sample</a></li> hidden -->
       <li><a href="#/">Ethan.+</a></li>
     </ul>
   </div>

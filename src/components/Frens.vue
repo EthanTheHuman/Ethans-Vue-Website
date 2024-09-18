@@ -246,5 +246,29 @@ svg {
     padding-left: 0;
     padding-right: 0;
   }
+  
+    /* Flexbox layout to make the two columns sit side by side */
+    .container {
+    display: flex;
+    justify-content: space-between; /* Ensure space between columns */
+    padding: 10px;
+    }
+
+    /* Style for the left column */
+    .left-column {
+    flex: 1; /* This means the left column will take up 1/3 of the available space */
+    padding-right: 10px;
+    }
+
+    /* Style for the right column */
+    .right-column {
+    flex: 2; /* This means the right column will take up 2/3 of the available space */
+    padding-left: 10px;
+    }
+
+    /* Optional: Customize the background or borders to see the layout better */
+    .left-column, .right-column {
+    border: 1px solid white;
+    }
 }
 </style>
