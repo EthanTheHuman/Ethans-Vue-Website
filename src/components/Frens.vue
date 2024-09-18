@@ -107,6 +107,8 @@ h1 {
     flex: 3;
     /* This means the right column will take up 2/3 of the available space */
     padding-left: 10px;
+    overflow-y: auto;
+    max-height: 100%;
 }
 
 /* Optional: Customize the background or borders to see the layout better */

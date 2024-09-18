@@ -44,6 +44,7 @@ export default {
     /* Adjust width as needed */
     height: 100%;
     object-fit: contain;
+    max-height: 200px;
     margin-right: 15px;
     /* Add space between the image and the text */
     border-radius: 5px;
