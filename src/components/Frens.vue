@@ -88,7 +88,7 @@ h1 {
 
 /* Flexbox layout to make the two columns sit side by side */
 .container {
-    display: flex;
+    display: flex  !important;
     justify-content: space-between;
     /* Ensure space between columns */
     padding: 10px;
