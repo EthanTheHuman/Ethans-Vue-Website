@@ -8,8 +8,10 @@
                 "Stardew", "GranblueRelink", "TabletopSim", "PummelParty", "Smash", "UCH", "CastleCrashers",
                 "BloonsTD6", "Genshin", "PPT", "GangBeasts", "TowerUnite", "GolfWithFriends", "Rounds",
                 "HumanFallFlat", "RoR2", "RoRR", "Unrailed", "LethalCompany", "ContentWarning", "Headbangers",
-                "Overcooked", "MakeWay", "Helldivers2", "SpaceMarine2", "DawnOfWar2", "EldenRing",
-                "BaldursGate3", "DarkPictures", "StickFight", "MK8", "MarioParty"
+                "Overcooked", "MakeWay", "Helldivers2", "SpaceMarine2", "DawnOfWar2", "EldenRing", "DBD",
+                "BaldursGate3", "DarkPictures", "StickFight", "MK8", "MarioParty", "GTFO", "Remnant",
+                "Tekken7", "Fighterz", "TABG", "Valheim", "SFV", "SF6", "BBT", "Escapists2", "FriendsVsFriends",
+                "Strive", "KOFXV", "Portal2", "Battlefront2", "Worms"
             ]
         },
         {
@@ -21,7 +23,9 @@
                 "BloonsTD6", "Genshin", "PPT", "GangBeasts", "TowerUnite", "GolfWithFriends", "Rounds",
                 "HumanFallFlat", "RoR2", "Unrailed", "LethalCompany", "ContentWarning", "Headbangers",
                 "Overcooked", "MakeWay", "Helldivers2", "DawnOfWar2", "SeaOfThieves", "EldenRing",
-                "BaldursGate3", "ForTheKing", "DarkPictures", "StickFight", "MK8", "MarioParty"
+                "BaldursGate3", "ForTheKing", "DarkPictures", "StickFight", "MK8", "MarioParty", "GTFO",
+                "DBD", "Remnant", "Tekken7", "Fighterz", "TABG", "Valheim", "SFV", "SF6", "BBT", "Escapists2",
+                "FriendsVsFriends", "Strive", "KOFXV", "Portal2", "Battlefront2", "Worms"
             ]
         },
         {
@@ -32,7 +36,8 @@
                 "GranblueRelink", "TabletopSim", "PummelParty", "Smash", "UCH", "CastleCrashers",
                 "BloonsTD6", "Genshin", "PPT", "GangBeasts", "Rounds", "HumanFallFlat", "RoR2", "RoRR",
                 "Unrailed", "LethalCompany", "ContentWarning", "Headbangers", "Overcooked", "MakeWay",
-                "Helldivers2", "SeaOfThieves", "ForTheKing", "DarkPictures", "StickFight", "MK8", "MarioParty"
+                "Helldivers2", "SeaOfThieves", "ForTheKing", "DarkPictures", "StickFight", "MK8", "MarioParty",
+                "GTFO", "DBD", "Remnant", "TABG", "Valheim", "SFV", "BBT", "Escapists2"
             ]
         },
         {
@@ -42,7 +47,8 @@
                 "L4D2", "Friday", "HatInTime", "TabletopSim", "PummelParty", "UCH", "PPT",
                 "GangBeasts", "Rounds", "HumanFallFlat", "RoR2", "Unrailed", "LethalCompany",
                 "ContentWarning", "Headbangers", "Overcooked", "MakeWay", "Helldivers2",
-                "SeaOfThieves", "EldenRing", "BaldursGate3", "DarkPictures", "StickFight"
+                "SeaOfThieves", "EldenRing", "BaldursGate3", "DarkPictures", "StickFight", "DBD",
+                "Remnant", "Tekken7", "Fighterz", "Valheim", "SFV", "Battlefront2"
             ]
         },
         {
@@ -52,7 +58,8 @@
                 "L4D2", "FallGuys", "Friday", "MonHunWorld", "HatInTime", "Stardew", "TabletopSim",
                 "PummelParty", "UCH", "GangBeasts", "GolfWithFriends", "Rounds", "HumanFallFlat",
                 "RoR2", "Smash", "LethalCompany", "ContentWarning", "Overcooked", "Helldivers2",
-                "SpaceMarine2", "EldenRing", "BaldursGate3", "DarkPictures", "MK8", "MarioParty"
+                "SpaceMarine2", "EldenRing", "BaldursGate3", "DarkPictures", "MK8", "MarioParty",
+                "DBD", "Tekken7", "TABG", "Valheim", "Portal2"
             ]
         },
         {
@@ -60,7 +67,7 @@
             "Games": [
                 "Fortnite", "DBSZ", "Jackbox", "Roblox", "GTAV", "GTAVHeists", "PartyAnimals",
                 "L4D2", "FallGuys", "Friday", "TabletopSim", "PummelParty", "UCH", "GangBeasts",
-                "Smash", "Overcooked", "SeaOfThieves", "DarkPictures"
+                "Smash", "Overcooked", "SeaOfThieves", "DarkPictures", "DBD", "Valheim", "SFV"
             ]
         },
         {
@@ -74,14 +81,15 @@
             "Games": [
                 "Fortnite", "Jackbox", "DBSZ", "Amogus", "PartyAnimals", "ChainedTogether",
                 "L4D2", "FallGuys", "Friday", "MonHunWorld", "Overcooked", "Helldivers2",
-                "SeaOfThieves", "BaldursGate3", "DarkPictures"
+                "SeaOfThieves", "BaldursGate3", "DarkPictures", "DBD", "Tekken7", "SFV"
             ]
         },
         {
             "Name": "Cooper",
             "Games": [
-                "Fortnite", "Jackbox", "Amogus", "PartyAnimals", "L4D2", "FallGuys",
-                "Friday", "Stardew", "TabletopSim", "TowerUnite", "GolfWithFriends", "DarkPictures"
+                "Fortnite", "Jackbox", "Amogus", "PartyAnimals", "L4D2", "FallGuys", "DBD",
+                "Friday", "Stardew", "TabletopSim", "TowerUnite", "GolfWithFriends", "DarkPictures",
+                "Tekken7", "Portal2"
             ]
         },
         {
@@ -445,6 +453,125 @@
             "MinPlayers": 2,
             "MaxPlayers": 4,
             "Poster": "https://cdn2.steamgriddb.com/grid/de0dfe3265f63b0fdcc3067e3b0ecc60.png"
+        },
+        {
+            "Name": "GTFO",
+            "ShortName": "GTFO",
+            "MinPlayers": 2,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/08026ca969f7fb6f2229dea34eeee65f.png"
+        },
+        {
+            "Name": "Dead By Daylight",
+            "ShortName": "DBD",
+            "MinPlayers": 5,
+            "MaxPlayers": 5,
+            "Poster": "https://cdn2.steamgriddb.com/grid/e094a58c3495647287f75da5f6a7f6f3.png"
+        },
+        {
+            "Name": "Remnant: From the Ashes",
+            "ShortName": "Remnant",
+            "MinPlayers": 2,
+            "MaxPlayers": 3,
+            "Poster": "https://cdn2.steamgriddb.com/grid/11b465ec6e2e00fbe0397fc8f78230d0.jpg"
+        },
+        {
+            "Name": "Tekken 7",
+            "ShortName": "Tekken7",
+            "MinPlayers": 2,
+            "MaxPlayers": 8,
+            "Poster": "https://cdn2.steamgriddb.com/grid/698c42c967a68312997479c5bde6cb28.jpg"
+        },
+        {
+            "Name": "Dragon Ball FighterZ",
+            "ShortName": "Fighterz",
+            "MinPlayers": 2,
+            "MaxPlayers": 8,
+            "Poster": "https://cdn2.steamgriddb.com/grid/4f55ec33a7d8f008ec2de92692e9a20f.jpg"
+        },
+        {
+            "Name": "Totally Accurate Battlegrounds",
+            "ShortName": "TABG",
+            "MinPlayers": 2,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/73770aa34d923815823db94d18bfef6f.jpg"
+        },
+        {
+            "Name": "Valheim",
+            "ShortName": "Valheim",
+            "MinPlayers": 2,
+            "MaxPlayers": 10,
+            "Poster": "https://cdn2.steamgriddb.com/grid/15bae9fa92cfa7982d794811b05162c9.png"
+        },
+        {
+            "Name": "Street Fighter V",
+            "ShortName": "SFV",
+            "MinPlayers": 2,
+            "MaxPlayers": 8,
+            "Poster": "https://cdn2.steamgriddb.com/grid/29d0d6e6e44c1ab6933ac3a3a0fc147f.png"
+        },
+        {
+            "Name": "Street Fighter 6",
+            "ShortName": "SF6",
+            "MinPlayers": 2,
+            "MaxPlayers": 8,
+            "Poster": "https://cdn2.steamgriddb.com/grid/3a6401be7b4a0b797234215aed085f85.png"
+        },
+        {
+            "Name": "Battleblock Theater",
+            "ShortName": "BBT",
+            "MinPlayers": 2,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/0e66221beb8e0a06d4648ae151a52201.png"
+        },
+        {
+            "Name": "The Escapists 2",
+            "ShortName": "Escapists2",
+            "MinPlayers": 2,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/01639908adcc6c9f525b328e06566e27.png"
+        },
+        {
+            "Name": "Friends vs Friends",
+            "ShortName": "FriendsVsFriends",
+            "MinPlayers": 2,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/1e7441ca5e24e5d2354e76365a4997d0.png"
+        },
+        {
+            "Name": "Guilty Gear Strive",
+            "ShortName": "Strive",
+            "MinPlayers": 2,
+            "MaxPlayers": 8,
+            "Poster": "https://cdn2.steamgriddb.com/grid/f10266fc9123bdc32d86ea4a3e843aff.png"
+        },
+        {
+            "Name": "The King Of Fighters XV",
+            "ShortName": "KOFXV",
+            "MinPlayers": 2,
+            "MaxPlayers": 8,
+            "Poster": "https://cdn2.steamgriddb.com/grid/3ad9a379e32acd1d46f57a3629b653ce.jpg"
+        },
+        {
+            "Name": "Portal 2",
+            "ShortName": "Portal2",
+            "MinPlayers": 1,
+            "MaxPlayers": 2,
+            "Poster": "https://cdn2.steamgriddb.com/grid/24be7c4485d63a3d70e038692172adce.png"
+        },
+        {
+            "Name": "Street Wars Battlefront 2",
+            "ShortName": "Battlefront2",
+            "MinPlayers": 2,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/12283a86d9bc01d1e79d01e5cc678133.png"
+        },
+        {
+            "Name": "Worms: WMD",
+            "ShortName": "Worms",
+            "MinPlayers": 2,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/87a6e8b2df778baa85aa4213b14196e2.png"
         }
     ]
 }
