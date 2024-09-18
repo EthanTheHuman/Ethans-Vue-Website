@@ -92,7 +92,6 @@ h1 {
     justify-content: space-between;
     /* Ensure space between columns */
     padding: 10px;
-    background-color: dodgerblue;
 }
 
 /* Style for the left column */
@@ -100,20 +99,18 @@ h1 {
     flex: 1;
     /* This means the left column will take up 1/3 of the available space */
     padding-right: 10px;
-    background-color: greenyellow;
+    border-right: 1px solid white;
 }
 
 /* Style for the right column */
 .right-column {
-    flex: 2;
+    flex: 3;
     /* This means the right column will take up 2/3 of the available space */
     padding-left: 10px;
-    background-color: red;
 }
 
 /* Optional: Customize the background or borders to see the layout better */
 .left-column,
 .right-column {
-    border: 1px solid white;
 }
 </style>
