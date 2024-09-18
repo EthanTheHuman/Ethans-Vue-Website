@@ -346,14 +346,14 @@
             "Name": "Lethal Company",
             "ShortName": "LethalCompany",
             "MinPlayers": 2,
-            "MaxPlayers": 4,
+            "MaxPlayers": 9,
             "Poster": "https://cdn2.steamgriddb.com/grid/f43dc09603a096dc46cd853eeb833d54.png"
         },
         {
             "Name": "Content Warning",
             "ShortName": "ContentWarning",
             "MinPlayers": 2,
-            "MaxPlayers": 4,
+            "MaxPlayers": 9,
             "Poster": "https://cdn2.steamgriddb.com/grid/9a04b4f590bb759024f2cfb8a0be6493.png"
         },
         {
