@@ -6,7 +6,11 @@
                 "DBSZ",
                 "Fortnite",
                 "Jackbox",
-                "Amogus"
+                "Amogus",
+                "Roblox",
+                "GTAV",
+                "GTAVHeists",
+                "DontStarve"
             ]
         },
         {
@@ -14,7 +18,10 @@
             "Games": [
                 "Fortnite",
                 "Jackbox",
-                "Amogus"
+                "Amogus",
+                "GTAV",
+                "GTAVHeists",
+                "DontStarve"
             ]
         },
         {
@@ -22,7 +29,10 @@
             "Games": [
                 "Fortnite",
                 "Jackbox",
-                "Amogus"
+                "Amogus",
+                "GTAV",
+                "GTAVHeists",
+                "DontStarve"
             ]
         },
         {
@@ -31,7 +41,9 @@
                 "Fortnite",
                 "DBSZ",
                 "Jackbox",
-                "Amogus"
+                "Amogus",
+                "GTAV",
+                "GTAVHeists"
             ]
         },
         {
@@ -40,7 +52,9 @@
                 "Fortnite",
                 "DBSZ",
                 "Jackbox",
-                "Amogus"
+                "Amogus",
+                "GTAV",
+                "GTAVHeists"
             ]
         },
         {
@@ -48,7 +62,10 @@
             "Games": [
                 "Fortnite",
                 "DBSZ",
-                "Jackbox"
+                "Jackbox",
+                "Roblox",
+                "GTAV",
+                "GTAVHeists"
             ]
         },
         {
@@ -64,6 +81,7 @@
             "Games": [
                 "Fortnite",
                 "Jackbox",
+                "DBSZ",
                 "Amogus"
             ]
         },
@@ -113,6 +131,34 @@
             "MinPlayers": 5,
             "MaxPlayers": 8,
             "Poster": "https://cdn2.steamgriddb.com/grid/09246ffb824ca2c5bc47a64cb302d3cb.jpg"
+        },
+        {
+            "Name": "Roblox",
+            "ShortName": "Amogus",
+            "MinPlayers": 1,
+            "MaxPlayers": 16,
+            "Poster": "https://cdn2.steamgriddb.com/grid/4d3767318b2f7769ae8413ac4c145f57.png"
+        },
+        {
+            "Name": "Grand Theft Auto Online",
+            "ShortName": "GTAV",
+            "MinPlayers": 1,
+            "MaxPlayers": 16,
+            "Poster": "https://cdn2.steamgriddb.com/grid/af485cfe36c496642f3870b0b435e604.jpg"
+        },
+        {
+            "Name": "Grand Theft Auto Online Heists",
+            "ShortName": "GTAVHeists",
+            "MinPlayers": 2,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/cf0d048f95784d563fbe4b0ec8b5c716.png"
+        },
+        {
+            "Name": "Don't Starve",
+            "ShortName": "DontStarve",
+            "MinPlayers": 2,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/cf0d048f95784d563fbe4b0ec8b5c716.png"
         }
     ]
 }

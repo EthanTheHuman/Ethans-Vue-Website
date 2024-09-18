@@ -27,7 +27,8 @@ export default {
     },
     computed: {
         filteredGames() {
-            const filtered = this.GameList.filter(game => {
+            const shuffledList = this.GameList.sort(() => Math.random() - 0.5);
+            const filtered = shuffledList.filter(game => {
                 const friendsWhoOwn = this.selectedFriends.filter(friend =>
                     friend.Games.includes(game.ShortName)
                 );
@@ -41,7 +42,7 @@ export default {
                     && hasRequiredFriend
             });
             if (this.selectedFriends.length === 0) {
-                return this.GameList;
+                return shuffledList;
             }
             else {
                 return filtered;
