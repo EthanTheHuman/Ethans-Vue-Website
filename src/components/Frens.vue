@@ -27,12 +27,18 @@ export default {
     },
     computed: {
         filteredGames() {
-            return this.GameList.filter(game => {
+            const filtered = this.GameList.filter(game => {
                 const friendsWhoOwn = this.selectedFriends.filter(friend =>
                     friend.Games.includes(game.ShortName)
                 );
                 return friendsWhoOwn.length > 0 && friendsWhoOwn.length <= game.MaxPlayers;
             });
+            if (this.selectedFriends.length === 0) {
+                return this.GameList;
+            }
+            else {
+                return filtered;
+            }
         }
     },
     methods: {
@@ -47,9 +53,7 @@ export default {
         async fetchData() {
             try {
                 this.FrensList = data.FrensList;
-                this.FrensList.push({ Name: 'Ethan', Games: ['Minecraft'] });
                 this.GameList = data.GameList;
-                this.GameList.push({ Name: 'Minecraft', MinPlayers: 1, MaxPlayers: 4, ShortName: 'MC' });
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
