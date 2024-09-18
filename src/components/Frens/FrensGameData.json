@@ -89,26 +89,30 @@
             "Name": "Dragon Ball Sparking Zero",
             "ShortName": "DBSZ",
             "MinPlayers": 1,
-            "MaxPlayers": 2
+            "MaxPlayers": 2,
+            "Poster": "https://cdn2.steamgriddb.com/grid/e1113f40e20464469d860bef72793600.png"
         },
         {
             "Name": "Fortnite",
             "ShortName": "Fortnite",
             "MinPlayers": 1,
-            "MaxPlayers": 4
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/e1113f40e20464469d860bef72793600.png"
         },
         {
             "Name": "Jackbox",
             "ShortName": "Jackbox",
             "MinPlayers": 2,
             "MaxPlayers": 8,
-            "RequiredFrens": [ "Ethan", "Kaitlyn"] 
+            "RequiredFrens": [ "Ethan", "Kaitlyn"] ,
+            "Poster": "https://cdn2.steamgriddb.com/grid/e1113f40e20464469d860bef72793600.png"
         },
         {
             "Name": "Among Us",
             "ShortName": "Amogus",
             "MinPlayers": 5,
-            "MaxPlayers": 8
+            "MaxPlayers": 8,
+            "Poster": "https://cdn2.steamgriddb.com/grid/e1113f40e20464469d860bef72793600.png"
         }
     ]
 }

@@ -246,7 +246,7 @@ svg {
     padding-left: 0;
     padding-right: 0;
   }
-  
+
     /* Flexbox layout to make the two columns sit side by side */
     .container {
     display: flex;
@@ -268,7 +268,8 @@ svg {
 
     /* Optional: Customize the background or borders to see the layout better */
     .left-column, .right-column {
-    border: 1px solid white;
+        border: 1px solid white;
+        background-color: dodgerblue;
     }
 }
 </style>
