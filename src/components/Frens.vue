@@ -33,7 +33,7 @@ export default {
                 );
                 let hasRequiredFriend = true;
                 if (game.RequiredFrens && game.RequiredFrens?.length > 0) {
-                    hasRequiredFriend = game.RequiredFrens.some(name => friendsWhoOwn.indexOf(name) > -1);
+                    hasRequiredFriend = game.RequiredFrens.some(name => friendsWhoOwn.some(friend => friend.Name === name));
                 }
                 return friendsWhoOwn.length == this.selectedFriends.length
                 && friendsWhoOwn.length <= game.MaxPlayers
