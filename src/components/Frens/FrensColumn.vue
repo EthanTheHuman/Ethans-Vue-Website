@@ -42,7 +42,7 @@
   
   /* Selected button style */
   button.selected {
-    background-color: green;
+    background-color: var(--main-color);
     color: white;
     border: 2px solid white; /* Adding a border */
     transform: scale(1.1); /* Slightly enlarge when selected */
