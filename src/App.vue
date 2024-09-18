@@ -4,11 +4,14 @@ import HelloWorld from './components/HelloWorld.vue'
 import Navbar from './components/NavBar.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import MultiverseCharacter from './components/MultiverseCharacter.vue'
+import Frens from './components/Frens.vue'
 
 const routes = {
   '/': TheWelcome,
   '/multiverse': MultiverseCharacter,
-  '/Multiverse': MultiverseCharacter
+  '/Multiverse': MultiverseCharacter,
+  '/frens': Frens,
+  '/Frens': Frens,
 }
 
 const currentPath = ref(window.location.hash)
