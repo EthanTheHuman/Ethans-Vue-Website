@@ -27,4 +27,8 @@ export default {
     padding: 10px;
     margin-bottom: 10px;
 }
+.game-card img {
+    width: auto;
+    height: 100%;
+}
 </style>

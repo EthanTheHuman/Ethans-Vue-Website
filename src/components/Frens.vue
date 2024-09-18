@@ -252,6 +252,7 @@ svg {
     display: flex;
     justify-content: space-between; /* Ensure space between columns */
     padding: 10px;
+    background-color: dodgerblue;
     }
 
     /* Style for the left column */
@@ -269,7 +270,6 @@ svg {
     /* Optional: Customize the background or borders to see the layout better */
     .left-column, .right-column {
         border: 1px solid white;
-        background-color: dodgerblue;
     }
 }
 </style>

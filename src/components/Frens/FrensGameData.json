@@ -97,7 +97,7 @@
             "ShortName": "Fortnite",
             "MinPlayers": 1,
             "MaxPlayers": 4,
-            "Poster": "https://cdn2.steamgriddb.com/grid/e1113f40e20464469d860bef72793600.png"
+            "Poster": "https://cdn2.steamgriddb.com/grid/bda86ed98b4ef87760d1c06e916e21f5.png"
         },
         {
             "Name": "Jackbox",
@@ -105,14 +105,14 @@
             "MinPlayers": 2,
             "MaxPlayers": 8,
             "RequiredFrens": [ "Ethan", "Kaitlyn"] ,
-            "Poster": "https://cdn2.steamgriddb.com/grid/e1113f40e20464469d860bef72793600.png"
+            "Poster": "https://cdn2.steamgriddb.com/grid/154fdc5e9c696a3cb96d645dbd8cab20.png"
         },
         {
             "Name": "Among Us",
             "ShortName": "Amogus",
             "MinPlayers": 5,
             "MaxPlayers": 8,
-            "Poster": "https://cdn2.steamgriddb.com/grid/e1113f40e20464469d860bef72793600.png"
+            "Poster": "https://cdn2.steamgriddb.com/grid/09246ffb824ca2c5bc47a64cb302d3cb.jpg"
         }
     ]
 }
