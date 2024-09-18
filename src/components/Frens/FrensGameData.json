@@ -314,13 +314,6 @@
             "Poster": "https://cdn2.steamgriddb.com/grid/e210bdde657ce41b3bf96bc3a800a381.png"
         },
         {
-            "Name": "Human Fall Flat",
-            "ShortName": "HumanFallFlat",
-            "MinPlayers": 1,
-            "MaxPlayers": 8,
-            "Poster": "https://cdn2.steamgriddb.com/grid/e210bdde657ce41b3bf96bc3a800a381.png"
-        },
-        {
             "Name": "Risk of Rain 2",
             "ShortName": "RoR2",
             "MinPlayers": 1,
