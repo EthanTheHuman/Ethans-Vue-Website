@@ -13,7 +13,13 @@
                 "DontStarve",
                 "PartyAnimals",
                 "ChainedTogether",
-                "L4D2"
+                "L4D2",
+                "FallGuys",
+                "Friday",
+                "MonHunWorld",
+                "HatInTime",
+                "Stardew",
+                "GranblueRelink"
             ]
         },
         {
@@ -27,7 +33,13 @@
                 "DontStarve",
                 "PartyAnimals",
                 "ChainedTogether",
-                "L4D2"
+                "L4D2",
+                "FallGuys",
+                "Friday",
+                "MonHunWorld",
+                "HatInTime",
+                "Stardew",
+                "GranblueRelink"
             ]
         },
         {
@@ -41,7 +53,13 @@
                 "DontStarve",
                 "PartyAnimals",
                 "ChainedTogether",
-                "L4D2"
+                "L4D2",
+                "FallGuys",
+                "Friday",
+                "MonHunWorld",
+                "HatInTime",
+                "Stardew",
+                "GranblueRelink"
             ]
         },
         {
@@ -54,7 +72,9 @@
                 "GTAV",
                 "GTAVHeists",
                 "PartyAnimals",
-                "L4D2"
+                "L4D2",
+                "Friday",
+                "HatInTime"
             ]
         },
         {
@@ -67,7 +87,12 @@
                 "GTAV",
                 "GTAVHeists",
                 "PartyAnimals",
-                "L4D2"
+                "L4D2",
+                "FallGuys",
+                "Friday",
+                "MonHunWorld",
+                "HatInTime",
+                "Stardew"
             ]
         },
         {
@@ -80,7 +105,9 @@
                 "GTAV",
                 "GTAVHeists",
                 "PartyAnimals",
-                "L4D2"
+                "L4D2",
+                "FallGuys",
+                "Friday"
             ]
         },
         {
@@ -89,7 +116,8 @@
                 "Fortnite",
                 "Jackbox",
                 "Amogus",
-                "PartyAnimals"
+                "PartyAnimals",
+                "FallGuys"
             ]
         },
         {
@@ -101,7 +129,10 @@
                 "Amogus",
                 "PartyAnimals",
                 "ChainedTogether",
-                "L4D2"
+                "L4D2",
+                "FallGuys",
+                "Friday",
+                "MonHunWorld"
             ]
         },
         {
@@ -111,7 +142,10 @@
                 "Jackbox",
                 "Amogus",
                 "PartyAnimals",
-                "L4D2"
+                "L4D2",
+                "FallGuys",
+                "Friday",
+                "Stardew"
             ]
         },
         {
@@ -121,7 +155,9 @@
                 "Jackbox",
                 "Amogus",
                 "PartyAnimals",
-                "L4D2"
+                "L4D2",
+                "FallGuys",
+                "Friday"
             ]
         }
     ],
@@ -204,6 +240,48 @@
             "MinPlayers": 2,
             "MaxPlayers": 4,
             "Poster": "https://cdn2.steamgriddb.com/grid/248fc45afe6980b6b520b592ff9de696.png"
+        },
+        {
+            "Name": "Fall Guys",
+            "ShortName": "FallGuys",
+            "MinPlayers": 2,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/ec4668b75aadd8ddccaf2d3dada94e20.png"
+        },
+        {
+            "Name": "Friday The 13th",
+            "ShortName": "Friday",
+            "MinPlayers": 6,
+            "MaxPlayers": 8,
+            "Poster": "https://cdn2.steamgriddb.com/grid/935e35865cbae77d52ea3dfd33edb576.png"
+        },
+        {
+            "Name": "Monster Hunter World",
+            "ShortName": "MonHunWorld",
+            "MinPlayers": 1,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/864598104d83374578ab53f3822d71f6.png"
+        },
+        {
+            "Name": "A Hat In Time",
+            "ShortName": "HatInTime",
+            "MinPlayers": 1,
+            "MaxPlayers": 16,
+            "Poster": "https://cdn2.steamgriddb.com/grid/19765458b7729bad0381c7ba199467ba.jpg"
+        },
+        {
+            "Name": "Stardew Valley",
+            "ShortName": "Stardew",
+            "MinPlayers": 1,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/7085307072925ee2a3e84f0d2d1ca6a1.png"
+        },
+        {
+            "Name": "Granblue Fantasy: Relink",
+            "ShortName": "GranblueRelink",
+            "MinPlayers": 1,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/64f8268246cb99ed34d94a35e1fcb412.png"
         }
     ]
 }
