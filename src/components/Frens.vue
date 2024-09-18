@@ -1,5 +1,5 @@
 <script setup>
-import response from './Frens/FrensGameData.json'
+import data from './Frens/FrensGameData.json'
 </script>
 
 <template>
@@ -46,7 +46,6 @@ export default {
         },
         async fetchData() {
             try {
-                const data = await response.json();
                 this.FrensList = data.FrensList;
                 this.FrensList.push({ Name: 'Ethan', Games: ['Minecraft'] });
                 this.GameList = data.GameList;
