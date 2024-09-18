@@ -47,7 +47,7 @@
       },
       async fetchData() {
         try {
-          const response = await fetch('/Frens/FrensGameData.json'); // Fetch the JSON file from public folder
+          const response = await fetch('./Frens/FrensGameData.json'); // Fetch the JSON file from public folder
           const data = await response.json();
           this.FrensList = data.FrensList;
           this.FrensList.push({ Name: 'Ethan', Games: ['Minecraft'] });
@@ -63,7 +63,7 @@
     }
   };
   </script>
-  
+
   <style scoped>
   /* Reset */
   
