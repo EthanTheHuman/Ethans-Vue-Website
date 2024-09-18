@@ -69,6 +69,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 
@@ -93,7 +94,7 @@ body {
 .container {
     width: 100%;
     height: 100%;
-    color: black;
+    color: white;
     height: 100vh;
     width: 100vw;
 }
