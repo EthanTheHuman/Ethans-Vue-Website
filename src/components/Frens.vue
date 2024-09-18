@@ -32,7 +32,7 @@ export default {
                     friend.Games.includes(game.ShortName)
                 );
                 let hasRequiredFriend = true;
-                if (game.RequiredFrens.length > 0) {
+                if (game.RequiredFrens && game.RequiredFrens?.length > 0) {
                     hasRequiredFriend = game.RequiredFrens.some(name => friendsWhoOwn.indexOf(name) > -1);
                 }
                 return friendsWhoOwn.length == this.selectedFriends.length
