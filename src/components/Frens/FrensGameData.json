@@ -7,7 +7,9 @@
                 "PartyAnimals", "ChainedTogether", "L4D2", "FallGuys", "Friday", "MonHunWorld", "HatInTime",
                 "Stardew", "GranblueRelink", "TabletopSim", "PummelParty", "Smash", "UCH", "CastleCrashers",
                 "BloonsTD6", "Genshin", "PPT", "GangBeasts", "TowerUnite", "GolfWithFriends", "Rounds",
-                "HumanFallFlat", "RoR2", "RoRR", "Unrailed"
+                "HumanFallFlat", "RoR2", "RoRR", "Unrailed", "LethalCompany", "ContentWarning", "Headbangers",
+                "Overcooked", "MakeWay", "Helldivers2", "SpaceMarine2", "DawnOfWar2", "EldenRing",
+                "BaldursGate3", "DarkPictures", "StickFight", "MK8", "MarioParty"
             ]
         },
         {
@@ -17,7 +19,9 @@
                 "ChainedTogether", "L4D2", "FallGuys", "Friday", "MonHunWorld", "HatInTime", "Stardew",
                 "GranblueRelink", "TabletopSim", "PummelParty", "Smash", "UCH", "CastleCrashers",
                 "BloonsTD6", "Genshin", "PPT", "GangBeasts", "TowerUnite", "GolfWithFriends", "Rounds",
-                "HumanFallFlat", "RoR2", "Unrailed"
+                "HumanFallFlat", "RoR2", "Unrailed", "LethalCompany", "ContentWarning", "Headbangers",
+                "Overcooked", "MakeWay", "Helldivers2", "DawnOfWar2", "SeaOfThieves", "EldenRing",
+                "BaldursGate3", "ForTheKing", "DarkPictures", "StickFight", "MK8", "MarioParty"
             ]
         },
         {
@@ -27,7 +31,8 @@
                 "ChainedTogether", "L4D2", "FallGuys", "Friday", "MonHunWorld", "HatInTime", "Stardew",
                 "GranblueRelink", "TabletopSim", "PummelParty", "Smash", "UCH", "CastleCrashers",
                 "BloonsTD6", "Genshin", "PPT", "GangBeasts", "Rounds", "HumanFallFlat", "RoR2", "RoRR",
-                "Unrailed"
+                "Unrailed", "LethalCompany", "ContentWarning", "Headbangers", "Overcooked", "MakeWay",
+                "Helldivers2", "SeaOfThieves", "ForTheKing", "DarkPictures", "StickFight", "MK8", "MarioParty"
             ]
         },
         {
@@ -35,7 +40,9 @@
             "Games": [
                 "Fortnite", "DBSZ", "Jackbox", "Amogus", "GTAV", "GTAVHeists", "PartyAnimals",
                 "L4D2", "Friday", "HatInTime", "TabletopSim", "PummelParty", "UCH", "PPT",
-                "GangBeasts", "Rounds", "HumanFallFlat", "RoR2", "Unrailed"
+                "GangBeasts", "Rounds", "HumanFallFlat", "RoR2", "Unrailed", "LethalCompany",
+                "ContentWarning", "Headbangers", "Overcooked", "MakeWay", "Helldivers2",
+                "SeaOfThieves", "EldenRing", "BaldursGate3", "DarkPictures", "StickFight"
             ]
         },
         {
@@ -44,7 +51,8 @@
                 "Fortnite", "DBSZ", "Jackbox", "Amogus", "GTAV", "GTAVHeists", "PartyAnimals",
                 "L4D2", "FallGuys", "Friday", "MonHunWorld", "HatInTime", "Stardew", "TabletopSim",
                 "PummelParty", "UCH", "GangBeasts", "GolfWithFriends", "Rounds", "HumanFallFlat",
-                "RoR2", "Smash"
+                "RoR2", "Smash", "LethalCompany", "ContentWarning", "Overcooked", "Helldivers2",
+                "SpaceMarine2", "EldenRing", "BaldursGate3", "DarkPictures", "MK8", "MarioParty"
             ]
         },
         {
@@ -52,33 +60,34 @@
             "Games": [
                 "Fortnite", "DBSZ", "Jackbox", "Roblox", "GTAV", "GTAVHeists", "PartyAnimals",
                 "L4D2", "FallGuys", "Friday", "TabletopSim", "PummelParty", "UCH", "GangBeasts",
-                "Smash"
+                "Smash", "Overcooked", "SeaOfThieves", "DarkPictures"
             ]
         },
         {
             "Name": "Andrew",
             "Games": [
-                "Fortnite", "Jackbox", "Amogus", "PartyAnimals", "FallGuys"
+                "Fortnite", "Jackbox", "Amogus", "PartyAnimals", "FallGuys", "SeaOfThieves", "DarkPictures"
             ]
         },
         {
             "Name": "Luis",
             "Games": [
                 "Fortnite", "Jackbox", "DBSZ", "Amogus", "PartyAnimals", "ChainedTogether",
-                "L4D2", "FallGuys", "Friday", "MonHunWorld"
+                "L4D2", "FallGuys", "Friday", "MonHunWorld", "Overcooked", "Helldivers2",
+                "SeaOfThieves", "BaldursGate3", "DarkPictures"
             ]
         },
         {
             "Name": "Cooper",
             "Games": [
                 "Fortnite", "Jackbox", "Amogus", "PartyAnimals", "L4D2", "FallGuys",
-                "Friday", "Stardew", "TabletopSim", "TowerUnite", "GolfWithFriends"
+                "Friday", "Stardew", "TabletopSim", "TowerUnite", "GolfWithFriends", "DarkPictures"
             ]
         },
         {
             "Name": "Lawson",
             "Games": [
-                "Fortnite", "Jackbox", "Amogus", "PartyAnimals", "L4D2", "FallGuys",
+                "Fortnite", "Jackbox", "Amogus", "PartyAnimals", "L4D2", "FallGuys", "DarkPictures",
                 "Friday"
             ]
         }
@@ -323,6 +332,119 @@
             "MinPlayers": 1,
             "MaxPlayers": 4,
             "Poster": "https://cdn2.steamgriddb.com/grid/a9cf753a69c9e7467277a147e813f78b.png"
+        },
+        {
+            "Name": "Lethal Company",
+            "ShortName": "LethalCompany",
+            "MinPlayers": 2,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/f43dc09603a096dc46cd853eeb833d54.png"
+        },
+        {
+            "Name": "Content Warning",
+            "ShortName": "ContentWarning",
+            "MinPlayers": 2,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/9a04b4f590bb759024f2cfb8a0be6493.png"
+        },
+        {
+            "Name": "Headbangers: Rhythm Royale",
+            "ShortName": "Headbangers",
+            "MinPlayers": 2,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/92165c827fc447df9a78686f90f8ff13.jpg"
+        },
+        {
+            "Name": "Overcooked! 2",
+            "ShortName": "Overcooked",
+            "MinPlayers": 2,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/c147cc04c5ac79a251a3f999dcb910ae.png"
+        },
+        {
+            "Name": "Make Way",
+            "ShortName": "MakeWay",
+            "MinPlayers": 2,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/73f6c5a47a36bfa15565b39f45b6da94.jpg"
+        },
+        {
+            "Name": "Helldivers 2",
+            "ShortName": "Helldivers2",
+            "MinPlayers": 2,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/949c1d90f6cb6e857139dc47dc2f3313.jpg"
+        },
+        {
+            "Name": "Warhammer 40 000: Space Marine 2",
+            "ShortName": "SpaceMarine2",
+            "MinPlayers": 1,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/e8cd36a85b2cdfe7c02dfa9f001d68e0.png"
+        },
+        {
+            "Name": "Warhammer 40 000: Dawn of War 2",
+            "ShortName": "DawnOfWar2",
+            "MinPlayers": 1,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/fec55d6c03aaadb850729ac768b4ddaa.png"
+        },
+        {
+            "Name": "Sea of Thieves",
+            "ShortName": "SeaOfThieves",
+            "MinPlayers": 1,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/fc28dd210d52ecb0135730aa1d151b1b.png"
+        },
+        {
+            "Name": "Elden Ring Seamless Co-Op",
+            "ShortName": "EldenRing",
+            "MinPlayers": 1,
+            "MaxPlayers": 16,
+            "Poster": "https://cdn2.steamgriddb.com/grid/5db39ad103e0a52fec8031b5efa5f302.png"
+        },
+        {
+            "Name": "Baldurs Gate 3",
+            "ShortName": "BaldursGate3",
+            "MinPlayers": 1,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/b122b82883a834cbcec5c2d2f5c0585c.png"
+        },
+        {
+            "Name": "For The King",
+            "ShortName": "ForTheKing",
+            "MinPlayers": 1,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/a9fa34b067b19c21e33f71497b73ae59.png"
+        },
+        {
+            "Name": "The Dark Pictures Anthology: The Devil In Me",
+            "ShortName": "DarkPictures",
+            "MinPlayers": 1,
+            "MaxPlayers": 16,
+            "Poster": "https://cdn2.steamgriddb.com/grid/31e359e31c1c8faacf784c6d749d3afa.png",
+            "RequiredFrens": [ "Kaitlyn"]
+        },
+        {
+            "Name": "Stick Fight: The Game",
+            "ShortName": "StickFight",
+            "MinPlayers": 1,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/4cd54b96f65aa29684bfe255df46b646.png"
+        },
+        {
+            "Name": "Mario Kart 8 Deluxe",
+            "ShortName": "MK8",
+            "MinPlayers": 2,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/8dbd6c8033b9d66d821540b627d78fdb.jpg"
+        },
+        {
+            "Name": "Mario Party Superstars",
+            "ShortName": "MarioParty",
+            "MinPlayers": 2,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/de0dfe3265f63b0fdcc3067e3b0ecc60.png"
         }
     ]
 }
