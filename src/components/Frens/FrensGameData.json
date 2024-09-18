@@ -11,7 +11,8 @@
                 "Overcooked", "MakeWay", "Helldivers2", "SpaceMarine2", "DawnOfWar2", "EldenRing", "DBD",
                 "BaldursGate3", "DarkPictures", "StickFight", "MK8", "MarioParty", "GTFO", "Remnant",
                 "Tekken7", "Fighterz", "TABG", "Valheim", "SFV", "SF6", "BBT", "Escapists2", "FriendsVsFriends",
-                "Strive", "KOFXV", "Portal2", "Battlefront2", "Worms"
+                "Strive", "KOFXV", "Portal2", "Battlefront2", "Worms", "Overwatch", "OverwatchCustoms",
+                "MarvelRivals"
             ]
         },
         {
@@ -25,7 +26,8 @@
                 "Overcooked", "MakeWay", "Helldivers2", "DawnOfWar2", "SeaOfThieves", "EldenRing",
                 "BaldursGate3", "ForTheKing", "DarkPictures", "StickFight", "MK8", "MarioParty", "GTFO",
                 "DBD", "Remnant", "Tekken7", "Fighterz", "TABG", "Valheim", "SFV", "SF6", "BBT", "Escapists2",
-                "FriendsVsFriends", "Strive", "KOFXV", "Portal2", "Battlefront2", "Worms"
+                "FriendsVsFriends", "Strive", "KOFXV", "Portal2", "Battlefront2", "Worms", "Overwatch",
+                "OverwatchCustoms", "MarvelRivals"
             ]
         },
         {
@@ -37,7 +39,8 @@
                 "BloonsTD6", "Genshin", "PPT", "GangBeasts", "Rounds", "HumanFallFlat", "RoR2", "RoRR",
                 "Unrailed", "LethalCompany", "ContentWarning", "Headbangers", "Overcooked", "MakeWay",
                 "Helldivers2", "SeaOfThieves", "ForTheKing", "DarkPictures", "StickFight", "MK8", "MarioParty",
-                "GTFO", "DBD", "Remnant", "TABG", "Valheim", "SFV", "BBT", "Escapists2"
+                "GTFO", "DBD", "Remnant", "TABG", "Valheim", "SFV", "BBT", "Escapists2", "Overwatch",
+                "OverwatchCustoms", "MarvelRivals"
             ]
         },
         {
@@ -48,7 +51,8 @@
                 "GangBeasts", "Rounds", "HumanFallFlat", "RoR2", "Unrailed", "LethalCompany",
                 "ContentWarning", "Headbangers", "Overcooked", "MakeWay", "Helldivers2",
                 "SeaOfThieves", "EldenRing", "BaldursGate3", "DarkPictures", "StickFight", "DBD",
-                "Remnant", "Tekken7", "Fighterz", "Valheim", "SFV", "Battlefront2"
+                "Remnant", "Tekken7", "Fighterz", "Valheim", "SFV", "Battlefront2", "Overwatch",
+                "OverwatchCustoms", "MarvelRivals"
             ]
         },
         {
@@ -59,7 +63,8 @@
                 "PummelParty", "UCH", "GangBeasts", "GolfWithFriends", "Rounds", "HumanFallFlat",
                 "RoR2", "Smash", "LethalCompany", "ContentWarning", "Overcooked", "Helldivers2",
                 "SpaceMarine2", "EldenRing", "BaldursGate3", "DarkPictures", "MK8", "MarioParty",
-                "DBD", "Tekken7", "TABG", "Valheim", "Portal2"
+                "DBD", "Tekken7", "TABG", "Valheim", "Portal2", "Overwatch", "OverwatchCustoms",
+                "MarvelRivals"
             ]
         },
         {
@@ -67,13 +72,15 @@
             "Games": [
                 "Fortnite", "DBSZ", "Jackbox", "Roblox", "GTAV", "GTAVHeists", "PartyAnimals",
                 "L4D2", "FallGuys", "Friday", "TabletopSim", "PummelParty", "UCH", "GangBeasts",
-                "Smash", "Overcooked", "SeaOfThieves", "DarkPictures", "DBD", "Valheim", "SFV"
+                "Smash", "Overcooked", "SeaOfThieves", "DarkPictures", "DBD", "Valheim", "SFV",
+                "Overwatch", "OverwatchCustoms", "MarvelRivals"
             ]
         },
         {
             "Name": "Andrew",
             "Games": [
-                "Fortnite", "Jackbox", "Amogus", "PartyAnimals", "FallGuys", "SeaOfThieves", "DarkPictures"
+                "Fortnite", "Jackbox", "Amogus", "PartyAnimals", "FallGuys", "SeaOfThieves", "DarkPictures",
+                "Overwatch", "OverwatchCustoms", "MarvelRivals"
             ]
         },
         {
@@ -81,7 +88,8 @@
             "Games": [
                 "Fortnite", "Jackbox", "DBSZ", "Amogus", "PartyAnimals", "ChainedTogether",
                 "L4D2", "FallGuys", "Friday", "MonHunWorld", "Overcooked", "Helldivers2",
-                "SeaOfThieves", "BaldursGate3", "DarkPictures", "DBD", "Tekken7", "SFV"
+                "SeaOfThieves", "BaldursGate3", "DarkPictures", "DBD", "Tekken7", "SFV",
+                "Overwatch", "OverwatchCustoms", "MarvelRivals"
             ]
         },
         {
@@ -89,14 +97,14 @@
             "Games": [
                 "Fortnite", "Jackbox", "Amogus", "PartyAnimals", "L4D2", "FallGuys", "DBD",
                 "Friday", "Stardew", "TabletopSim", "TowerUnite", "GolfWithFriends", "DarkPictures",
-                "Tekken7", "Portal2"
+                "Tekken7", "Portal2", "Overwatch", "OverwatchCustoms", "MarvelRivals"
             ]
         },
         {
             "Name": "Lawson",
             "Games": [
                 "Fortnite", "Jackbox", "Amogus", "PartyAnimals", "L4D2", "FallGuys", "DarkPictures",
-                "Friday"
+                "Friday", "Overwatch", "OverwatchCustoms", "MarvelRivals"
             ]
         }
     ],
@@ -560,11 +568,25 @@
             "Poster": "https://cdn2.steamgriddb.com/grid/12283a86d9bc01d1e79d01e5cc678133.png"
         },
         {
-            "Name": "Worms: WMD",
-            "ShortName": "Worms",
+            "Name": "Overwatch 2 Quickplay",
+            "ShortName": "Overwatch",
+            "MinPlayers": 5,
+            "MaxPlayers": 5,
+            "Poster": "https://cdn2.steamgriddb.com/grid/020b0c5baff35ba0de77ce9fe972bee3.png"
+        },
+        {
+            "Name": "Overwatch 2 Customs/Deathmatch",
+            "ShortName": "OverwatchCustoms",
+            "MinPlayers": 3,
+            "MaxPlayers": 10,
+            "Poster": "https://cdn2.steamgriddb.com/grid/06936c40b8def443232fc2a1a83a75cd.jpg"
+        },
+        {
+            "Name": "Marvel Rivals",
+            "ShortName": "MarvelRivals",
             "MinPlayers": 2,
-            "MaxPlayers": 4,
-            "Poster": "https://cdn2.steamgriddb.com/grid/87a6e8b2df778baa85aa4213b14196e2.png"
+            "MaxPlayers": 6,
+            "Poster": "https://cdn2.steamgriddb.com/grid/5ae0e0d2c63912ee363c815cf8736e39.png"
         }
     ]
 }
