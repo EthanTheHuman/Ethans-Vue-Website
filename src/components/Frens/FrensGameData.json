@@ -118,7 +118,7 @@
         {
             "Name": "Jackbox",
             "ShortName": "Jackbox",
-            "MinPlayers": 2,
+            "MinPlayers": 4,
             "MaxPlayers": 8,
             "RequiredFrens": [ "Ethan", "Kaitlyn", "Kenzie" ] ,
             "Poster": "https://cdn2.steamgriddb.com/grid/154fdc5e9c696a3cb96d645dbd8cab20.png"
