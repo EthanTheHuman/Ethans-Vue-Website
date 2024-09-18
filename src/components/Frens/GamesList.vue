@@ -29,6 +29,6 @@ export default {
 }
 .game-card img {
     width: auto;
-    height: 100%;
+    height: 60px;
 }
 </style>
