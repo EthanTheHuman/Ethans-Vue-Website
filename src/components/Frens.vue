@@ -1,7 +1,7 @@
 <template>
     <div class="container">
       <div class="left-column">
-        <FriendsColumn
+        <FrensColumn
           :friends="FrensList"
           @toggleFriend="toggleFriend"
         />
@@ -15,7 +15,7 @@
   </template>
   
   <script>
-  import FriendsColumn from './Frens/FrensColumn.vue';
+  import FrensColumn from './Frens/FrensColumn.vue';
   import GamesList from './Frens/GamesList.vue';
   
   export default {
@@ -50,7 +50,9 @@
           const response = await fetch('/Frens/FrensGameData.json'); // Fetch the JSON file from public folder
           const data = await response.json();
           this.FrensList = data.FrensList;
+          this.FrensList.push({ Name: 'Ethan', Games: ['Minecraft'] });
           this.GameList = data.GameList;
+          this.GameList.push({ Name: 'Minecraft', MinPlayers: 1, MaxPlayers: 4, ShortName: 'MC' });
         } catch (error) {
           console.error('Error fetching data:', error);
         }
