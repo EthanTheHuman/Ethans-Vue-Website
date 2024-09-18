@@ -64,3 +64,56 @@
   };
   </script>
   
+  <style scoped>
+  /* Reset */
+  
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* Essentials */
+  
+  .container {
+    display: table;
+  }
+  
+  .content {
+    display: table-row;
+    height: 100%;
+  }
+  
+  .content-body {
+    display: table-cell;
+  }
+  
+  
+  /* Aesthetics */
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    color: black;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .header,
+  .footer {
+    background: dodgerblue;
+  }
+  
+  .content-body {
+    overflow: hidden;
+  }
+  </style>
+  
+  <style>
+    :root {
+      --main-color: orange;
+    }
+  </style>
+  
