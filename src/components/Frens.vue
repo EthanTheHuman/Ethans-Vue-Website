@@ -31,7 +31,10 @@ export default {
                 const friendsWhoOwn = this.selectedFriends.filter(friend =>
                     friend.Games.includes(game.ShortName)
                 );
-                return friendsWhoOwn.length == this.selectedFriends.length && friendsWhoOwn.length <= game.MaxPlayers && friendsWhoOwn.length >= game.MinPlayers;
+                return friendsWhoOwn.length == this.selectedFriends.length
+                && friendsWhoOwn.length <= game.MaxPlayers
+                && friendsWhoOwn.length >= game.MinPlayers
+                && game.RequiredFrens.some(name => friendsWhoOwn.indexOf(name) > -1)
             });
             if (this.selectedFriends.length === 0) {
                 return this.GameList;

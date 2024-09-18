@@ -4,13 +4,74 @@
             "Name": "Ethan",
             "Games": [
                 "DBSZ",
-                "Fortnite"
+                "Fortnite",
+                "Jackbox"
             ]
         },
         {
             "Name": "Kaitlyn",
             "Games": [
-                "Fortnite"
+                "Fortnite",
+                "Jackbox"
+            ]
+        },
+        {
+            "Name": "Kenzie",
+            "Games": [
+                "Fortnite",
+                "Jackbox"
+            ]
+        },
+        {
+            "Name": "Sloth",
+            "Games": [
+                "Fortnite",
+                "DBSZ",
+                "Jackbox"
+            ]
+        },
+        {
+            "Name": "Shane",
+            "Games": [
+                "Fortnite",
+                "DBSZ",
+                "Jackbox"
+            ]
+        },
+        {
+            "Name": "Edward",
+            "Games": [
+                "Fortnite",
+                "DBSZ",
+                "Jackbox"
+            ]
+        },
+        {
+            "Name": "Andrew",
+            "Games": [
+                "Fortnite",
+                "Jackbox"
+            ]
+        },
+        {
+            "Name": "Luis",
+            "Games": [
+                "Fortnite",
+                "Jackbox"
+            ]
+        },
+        {
+            "Name": "Cooper",
+            "Games": [
+                "Fortnite",
+                "Jackbox"
+            ]
+        },
+        {
+            "Name": "Lawson",
+            "Games": [
+                "Fortnite",
+                "Jackbox"
             ]
         }
     ],
@@ -26,6 +87,13 @@
             "ShortName": "Fortnite",
             "MinPlayers": 1,
             "MaxPlayers": 4
+        },
+        {
+            "Name": "Jackbox",
+            "ShortName": "Jackbox",
+            "MinPlayers": 2,
+            "MaxPlayers": 8,
+            "RequiredFrens": [ "Ethan", "Kaitlyn"] 
         }
     ]
 }
