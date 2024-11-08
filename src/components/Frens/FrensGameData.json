@@ -12,7 +12,7 @@
                 "BaldursGate3", "DarkPictures", "StickFight", "MK8", "MarioParty", "GTFO", "Remnant",
                 "Tekken7", "Fighterz", "TABG", "Valheim", "SFV", "SF6", "BBT", "Escapists2", "FriendsVsFriends",
                 "Strive", "KOFXV", "Portal2", "Battlefront2", "Worms", "Overwatch", "OverwatchCustoms",
-                "MarvelRivals"
+                "MarvelRivals", "DeathNote"
             ]
         },
         {
@@ -27,7 +27,7 @@
                 "BaldursGate3", "ForTheKing", "DarkPictures", "StickFight", "MK8", "MarioParty", "GTFO",
                 "DBD", "Remnant", "Tekken7", "Fighterz", "TABG", "Valheim", "SFV", "SF6", "BBT", "Escapists2",
                 "FriendsVsFriends", "Strive", "KOFXV", "Portal2", "Battlefront2", "Worms", "Overwatch",
-                "OverwatchCustoms", "MarvelRivals"
+                "OverwatchCustoms", "MarvelRivals", "DeathNote"
             ]
         },
         {
@@ -40,7 +40,7 @@
                 "Unrailed", "LethalCompany", "ContentWarning", "Headbangers", "Overcooked", "MakeWay",
                 "Helldivers2", "SeaOfThieves", "ForTheKing", "DarkPictures", "StickFight", "MK8", "MarioParty",
                 "GTFO", "DBD", "Remnant", "TABG", "Valheim", "SFV", "BBT", "Escapists2", "Overwatch",
-                "OverwatchCustoms", "MarvelRivals"
+                "OverwatchCustoms", "MarvelRivals", "DeathNote"
             ]
         },
         {
@@ -52,7 +52,7 @@
                 "ContentWarning", "Headbangers", "Overcooked", "MakeWay", "Helldivers2",
                 "SeaOfThieves", "EldenRing", "BaldursGate3", "DarkPictures", "StickFight", "DBD",
                 "Remnant", "Tekken7", "Fighterz", "Valheim", "SFV", "Battlefront2", "Overwatch",
-                "OverwatchCustoms", "MarvelRivals"
+                "OverwatchCustoms", "MarvelRivals", "DeathNote"
             ]
         },
         {
@@ -587,6 +587,13 @@
             "MinPlayers": 2,
             "MaxPlayers": 6,
             "Poster": "https://cdn2.steamgriddb.com/grid/5ae0e0d2c63912ee363c815cf8736e39.png"
+        },
+        {
+            "Name": "Death Note: Killer Within",
+            "ShortName": "DeathNote",
+            "MinPlayers": 3,
+            "MaxPlayers": 10,
+            "Poster": "https://cdn.cloudflare.steamstatic.com/steam/apps/2213190/library_600x900_2x.jpg"
         }
     ]
 }
