@@ -12,7 +12,7 @@
                 "BaldursGate3", "DarkPictures", "StickFight", "MK8", "MarioParty", "GTFO", "Remnant",
                 "Tekken7", "Fighterz", "TABG", "Valheim", "SFV", "SF6", "BBT", "Escapists2", "FriendsVsFriends",
                 "Strive", "KOFXV", "Portal2", "Battlefront2", "Worms", "Overwatch", "OverwatchCustoms",
-                "MarvelRivals", "DeathNote"
+                "MarvelRivals", "DeathNote", "Isaac"
             ]
         },
         {
@@ -27,7 +27,7 @@
                 "BaldursGate3", "ForTheKing", "DarkPictures", "StickFight", "MK8", "MarioParty", "GTFO",
                 "DBD", "Remnant", "Tekken7", "Fighterz", "TABG", "Valheim", "SFV", "SF6", "BBT", "Escapists2",
                 "FriendsVsFriends", "Strive", "KOFXV", "Portal2", "Battlefront2", "Worms", "Overwatch",
-                "OverwatchCustoms", "MarvelRivals", "DeathNote"
+                "OverwatchCustoms", "MarvelRivals", "DeathNote", "Isaac"
             ]
         },
         {
@@ -40,7 +40,7 @@
                 "Unrailed", "LethalCompany", "ContentWarning", "Headbangers", "Overcooked", "MakeWay",
                 "Helldivers2", "SeaOfThieves", "ForTheKing", "DarkPictures", "StickFight", "MK8", "MarioParty",
                 "GTFO", "DBD", "Remnant", "TABG", "Valheim", "SFV", "BBT", "Escapists2", "Overwatch",
-                "OverwatchCustoms", "MarvelRivals", "DeathNote"
+                "OverwatchCustoms", "MarvelRivals", "DeathNote", "Isaac"
             ]
         },
         {
@@ -594,6 +594,13 @@
             "MinPlayers": 3,
             "MaxPlayers": 10,
             "Poster": "https://cdn.cloudflare.steamstatic.com/steam/apps/2213190/library_600x900_2x.jpg"
+        },
+        {
+            "Name": "The Binding of Isaac: Repentence+",
+            "ShortName": "Isaac",
+            "MinPlayers": 2,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/77a8c1d104eab67d5a5c673a5d47425e.png"
         }
     ]
 }
