@@ -12,7 +12,7 @@
                 "BaldursGate3", "DarkPictures", "StickFight", "MK8", "MarioParty", "GTFO", "Remnant",
                 "Tekken7", "Fighterz", "TABG", "Valheim", "SFV", "SF6", "BBT", "Escapists2", "FriendsVsFriends",
                 "Strive", "KOFXV", "Portal2", "Battlefront2", "Worms", "Overwatch", "OverwatchCustoms",
-                "MarvelRivals", "DeathNote", "Isaac"
+                "MarvelRivals", "DeathNote", "Isaac", "Archipelago"
             ]
         },
         {
@@ -27,7 +27,7 @@
                 "BaldursGate3", "ForTheKing", "DarkPictures", "StickFight", "MK8", "MarioParty", "GTFO",
                 "DBD", "Remnant", "Tekken7", "Fighterz", "TABG", "Valheim", "SFV", "SF6", "BBT", "Escapists2",
                 "FriendsVsFriends", "Strive", "KOFXV", "Portal2", "Battlefront2", "Worms", "Overwatch",
-                "OverwatchCustoms", "MarvelRivals", "DeathNote", "Isaac"
+                "OverwatchCustoms", "MarvelRivals", "DeathNote", "Isaac", "Archipelago"
             ]
         },
         {
@@ -40,7 +40,7 @@
                 "Unrailed", "LethalCompany", "ContentWarning", "Headbangers", "Overcooked", "MakeWay",
                 "Helldivers2", "SeaOfThieves", "ForTheKing", "DarkPictures", "StickFight", "MK8", "MarioParty",
                 "GTFO", "DBD", "Remnant", "TABG", "Valheim", "SFV", "BBT", "Escapists2", "Overwatch",
-                "OverwatchCustoms", "MarvelRivals", "DeathNote", "Isaac"
+                "OverwatchCustoms", "MarvelRivals", "DeathNote", "Isaac", "Archipelago"
             ]
         },
         {
@@ -52,7 +52,7 @@
                 "ContentWarning", "Headbangers", "Overcooked", "MakeWay", "Helldivers2",
                 "SeaOfThieves", "EldenRing", "BaldursGate3", "DarkPictures", "StickFight", "DBD",
                 "Remnant", "Tekken7", "Fighterz", "Valheim", "SFV", "Battlefront2", "Overwatch",
-                "OverwatchCustoms", "MarvelRivals", "DeathNote"
+                "OverwatchCustoms", "MarvelRivals", "DeathNote", "Archipelago"
             ]
         },
         {
@@ -89,7 +89,14 @@
                 "Fortnite", "Jackbox", "DBSZ", "Amogus", "PartyAnimals", "ChainedTogether",
                 "L4D2", "FallGuys", "Friday", "MonHunWorld", "Overcooked", "Helldivers2",
                 "SeaOfThieves", "BaldursGate3", "DarkPictures", "DBD", "Tekken7", "SFV",
-                "Overwatch", "OverwatchCustoms", "MarvelRivals"
+                "Overwatch", "OverwatchCustoms", "MarvelRivals", "DeathNote"
+            ]
+        },
+        {
+            "Name": "Alissa",
+            "Games": [
+                "Fortnite", "MarvelRivals", "Overwatch", "OverwatchCustoms", "Phasmophobia",
+                "LethalCompany", "Amogus", "Minecraft", "Jackbox"
             ]
         },
         {
@@ -601,6 +608,13 @@
             "MinPlayers": 2,
             "MaxPlayers": 4,
             "Poster": "https://cdn2.steamgriddb.com/grid/77a8c1d104eab67d5a5c673a5d47425e.png"
+        },
+        {
+            "Name": "Archipelago",
+            "ShortName": "Archipelago",
+            "MinPlayers": 2,
+            "MaxPlayers": 60,
+            "Poster": "https://cdn2.steamgriddb.com/thumb/4a497782eee46fbbd2862437528ef667.jpg"
         }
     ]
 }
