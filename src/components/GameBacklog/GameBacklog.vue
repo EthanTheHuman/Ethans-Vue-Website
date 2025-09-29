@@ -105,12 +105,39 @@
         @dragstart="onDragStart(index)"
         @dragover="onDragOver"
         @drop="onDrop(index)"
+        @click="selectGameForMobile(game.id)"
         class="game-card"
-        :class="{ dragging: draggingIndex === index }"
+        :class="{ 
+          dragging: draggingIndex === index,
+          'mobile-selected': selectedGameId === game.id && currentView === 'priority'
+        }"
       >
         <div class="game-image">
           <img :src="game.image || game.thumb" :alt="game.name" />
           <div v-if="currentView === 'priority'" class="priority-number">{{ index + 1 }}</div>
+        </div>
+        
+        <!-- Mobile reorder arrows - only show when card is selected and in priority view -->
+        <div 
+          v-if="selectedGameId === game.id && currentView === 'priority'"
+          class="mobile-arrows"
+        >
+          <button 
+            @click.stop="moveGameUp()"
+            :disabled="index === 0"
+            class="arrow-button arrow-up"
+            title="Move up"
+          >
+            ↑
+          </button>
+          <button 
+            @click.stop="moveGameDown()"
+            :disabled="index === filteredGames.length - 1"
+            class="arrow-button arrow-down"
+            title="Move down"
+          >
+            ↓
+          </button>
         </div>
         
         <div class="game-info">
@@ -119,6 +146,7 @@
             <input
               v-model="game.customName"
               @blur="updateCustomName(game)"
+              @click.stop=""
               class="custom-name-input"
               :placeholder="'Sort name (leave blank for default)'"
             />
@@ -129,6 +157,7 @@
               v-model="game.tagInput"
               @keyup.enter="addTag(game)"
               @blur="addTag(game)"
+              @click.stop=""
               placeholder="Add tags..."
               class="tag-input"
               :key="game.id + '-tag-input'"
@@ -138,7 +167,7 @@
                 v-for="tag in game.tags"
                 :key="tag"
                 class="tag"
-                @click="removeTag(game, tag)"
+                @click.stop="removeTag(game, tag)"
               >
                 {{ tag }} ×
               </span>
@@ -146,7 +175,7 @@
           </div>
         </div>
         
-        <button @click="removeGame(game.id)" class="remove-button">×</button>
+        <button @click.stop="removeGame(game.id)" class="remove-button">×</button>
       </div>
     </div>
     
@@ -171,6 +200,7 @@ export default {
       currentView: 'priority', // 'priority' or 'name'
       selectedTags: [],
       draggingIndex: null,
+      selectedGameId: null, // For mobile touch reordering
       nextId: 1,
     }
   },
@@ -198,6 +228,12 @@ export default {
       // For priority view, we maintain the existing order
 
       return filtered;
+    }
+  },
+  watch: {
+    // Clear mobile selection when switching views
+    currentView() {
+      this.selectedGameId = null;
     }
   },
   methods: {
@@ -317,6 +353,53 @@ export default {
       
       const randomGame = filtered[Math.floor(Math.random() * filtered.length)];
       alert(`🎮 Your random game is: ${randomGame.customName || randomGame.name}!`);
+    },
+    // Mobile touch reordering methods
+    selectGameForMobile(gameId) {
+      if (this.currentView !== 'priority') return;
+      
+      // Toggle selection - if clicking the same game, deselect it
+      if (this.selectedGameId === gameId) {
+        this.selectedGameId = null;
+      } else {
+        this.selectedGameId = gameId;
+      }
+    },
+    moveGameUp() {
+      if (!this.selectedGameId || this.currentView !== 'priority') return;
+      
+      const currentIndex = this.backlogGames.findIndex(g => g.id === this.selectedGameId);
+      if (currentIndex <= 0) return; // Already at top or not found
+      
+      // Swap with the game above
+      const temp = this.backlogGames[currentIndex];
+      this.backlogGames[currentIndex] = this.backlogGames[currentIndex - 1];
+      this.backlogGames[currentIndex - 1] = temp;
+      
+      // Update priorities
+      this.backlogGames.forEach((game, i) => {
+        game.priority = i;
+      });
+      
+      this.saveToLocalStorage();
+    },
+    moveGameDown() {
+      if (!this.selectedGameId || this.currentView !== 'priority') return;
+      
+      const currentIndex = this.backlogGames.findIndex(g => g.id === this.selectedGameId);
+      if (currentIndex >= this.backlogGames.length - 1 || currentIndex === -1) return; // Already at bottom or not found
+      
+      // Swap with the game below
+      const temp = this.backlogGames[currentIndex];
+      this.backlogGames[currentIndex] = this.backlogGames[currentIndex + 1];
+      this.backlogGames[currentIndex + 1] = temp;
+      
+      // Update priorities
+      this.backlogGames.forEach((game, i) => {
+        game.priority = i;
+      });
+      
+      this.saveToLocalStorage();
     },
     // Drag and drop methods for priority reordering
     onDragStart(index) {

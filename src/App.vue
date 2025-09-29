@@ -64,9 +64,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   box-sizing: border-box;
-  overflow: hidden; /* Prevent any scrolling on the main page */
 }
 
 .header {
@@ -75,14 +74,11 @@ body {
 
 .content {
   flex: 1; /* Take up remaining space */
-  overflow: hidden;
 }
 
 .content-body {
   width: 100%;
-  height: 100%;
   box-sizing: border-box;
-  overflow: hidden; /* Prevent overflow in content area */
 }
 
 .footer {

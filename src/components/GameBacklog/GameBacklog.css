@@ -474,4 +474,74 @@ h1 {
     margin-bottom: 10px;
     max-width: none;
   }
+  
+  /* Mobile selection and reordering styles */
+  .priority-view .game-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .game-card.mobile-selected {
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.3);
+    transform: scale(1.02);
+  }
+  
+  .mobile-arrows {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 10;
+  }
+  
+  .arrow-button {
+    width: 36px;
+    height: 36px;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--main-color);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(4px);
+  }
+  
+  .arrow-button:hover:not(:disabled) {
+    background: var(--main-color);
+    color: black;
+    transform: scale(1.1);
+  }
+  
+  .arrow-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    border-color: #666;
+    color: #666;
+  }
+  
+  .arrow-button:active:not(:disabled) {
+    transform: scale(0.95);
+  }
+}
+
+/* On larger screens, hide mobile-specific elements */
+@media (min-width: 769px) {
+  .mobile-arrows {
+    display: none !important;
+  }
+  
+  .game-card.mobile-selected {
+    border: 2px solid #333;
+    box-shadow: none;
+    transform: none;
+  }
 }
