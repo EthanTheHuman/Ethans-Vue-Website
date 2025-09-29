@@ -8,11 +8,20 @@ class GameBacklogAPI {
     // 2. Store it securely (environment variables)
     // 3. Use a backend proxy to avoid exposing the API key
     this.apiKey = import.meta.env.VITE_STEAMGRIDDB_API_KEY || null; // Using environment variable
-    this.baseURL = '/api/steamgriddb'; // Use proxy instead of direct API
+    
+    // Use different endpoints for dev vs production
+    if (import.meta.env.DEV) {
+      // Development: Use Vite proxy
+      this.baseURL = '/api/steamgriddb';
+    } else {
+      // Production: Use Netlify function
+      this.baseURL = '/.netlify/functions/steamgriddb';
+    }
     
     // Debug: Log API key status
     console.log('SteamGridDB API Key loaded:', this.apiKey ? 'Yes (Key: ' + this.apiKey.substring(0, 8) + '...)' : 'No');
     console.log('Using proxy URL:', this.baseURL);
+    console.log('Environment:', import.meta.env.DEV ? 'Development' : 'Production');
   }
 
   // Search for games

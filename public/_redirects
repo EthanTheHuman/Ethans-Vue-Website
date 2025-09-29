@@ -1,0 +1,5 @@
+# Redirect API calls to SteamGridDB
+/api/steamgriddb/* https://www.steamgriddb.com/api/v2/:splat 200
+
+# SPA fallback
+/*    /index.html   200
