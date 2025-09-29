@@ -12,7 +12,7 @@
                 "BaldursGate3", "DarkPictures", "StickFight", "MK8", "MarioParty", "GTFO", "Remnant",
                 "Tekken7", "Fighterz", "TABG", "Valheim", "SFV", "SF6", "BBT", "Escapists2", "FriendsVsFriends",
                 "Strive", "KOFXV", "Portal2", "Battlefront2", "Worms", "Overwatch", "OverwatchCustoms",
-                "MarvelRivals", "DeathNote", "Isaac", "Archipelago"
+                "MarvelRivals", "DeathNote", "Isaac", "Archipelago", "MKW"
             ]
         },
         {
@@ -27,7 +27,7 @@
                 "BaldursGate3", "ForTheKing", "DarkPictures", "StickFight", "MK8", "MarioParty", "GTFO",
                 "DBD", "Remnant", "Tekken7", "Fighterz", "TABG", "Valheim", "SFV", "SF6", "BBT", "Escapists2",
                 "FriendsVsFriends", "Strive", "KOFXV", "Portal2", "Battlefront2", "Worms", "Overwatch",
-                "OverwatchCustoms", "MarvelRivals", "DeathNote", "Isaac", "Archipelago"
+                "OverwatchCustoms", "MarvelRivals", "DeathNote", "Isaac", "Archipelago", "MKW"
             ]
         },
         {
@@ -40,7 +40,7 @@
                 "Unrailed", "LethalCompany", "ContentWarning", "Headbangers", "Overcooked", "MakeWay",
                 "Helldivers2", "SeaOfThieves", "ForTheKing", "DarkPictures", "StickFight", "MK8", "MarioParty",
                 "GTFO", "DBD", "Remnant", "TABG", "Valheim", "SFV", "BBT", "Escapists2", "Overwatch",
-                "OverwatchCustoms", "MarvelRivals", "DeathNote", "Isaac", "Archipelago"
+                "OverwatchCustoms", "MarvelRivals", "DeathNote", "Isaac", "Archipelago", "MKW"
             ]
         },
         {
@@ -456,11 +456,18 @@
             "Poster": "https://cdn2.steamgriddb.com/grid/8dbd6c8033b9d66d821540b627d78fdb.jpg"
         },
         {
-            "Name": "Mario Party Superstars",
+            "Name": "Mario Kart World",
+            "ShortName": "MKW",
+            "MinPlayers": 2,
+            "MaxPlayers": 4,
+            "Poster": "https://cdn2.steamgriddb.com/grid/c2526ac91cf2dba8f8b1b58935c7597c.png"
+        },
+        {
+            "Name": "Super Mario Party Jamboree",
             "ShortName": "MarioParty",
             "MinPlayers": 2,
             "MaxPlayers": 4,
-            "Poster": "https://cdn2.steamgriddb.com/grid/de0dfe3265f63b0fdcc3067e3b0ecc60.png"
+            "Poster": "https://cdn2.steamgriddb.com/grid/d8990f79de598c52139e95e819c86c8c.png"
         },
         {
             "Name": "GTFO",
