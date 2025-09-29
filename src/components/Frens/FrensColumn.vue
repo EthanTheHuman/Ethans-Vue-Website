@@ -15,14 +15,14 @@
   
   <script>
   export default {
-    props: ['friends'],
+    props: ['friends', 'selectedFriends'],
     methods: {
       toggle(friend) {
         this.$emit('toggleFriend', friend);
       },
       isSelected(friend) {
-        // This function checks if the friend is in the selectedFriends array in the parent
-        return this.$parent.selectedFriends.includes(friend);
+        // This function checks if the friend is in the selectedFriends array passed as prop
+        return this.selectedFriends && this.selectedFriends.includes(friend);
       }
     }
   };

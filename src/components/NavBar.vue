@@ -12,6 +12,7 @@ defineProps({
     <ul>
       <li><a href="#/">Home</a></li>
       <li><a href="#/multiverse">Multiverse Character Creator</a></li>
+      <li><a href="#/gamebacklog">Game Backlog</a></li>
       <li class="spacer" style="flex-grow: 1;"></li>
       <!-- This spacer will grow and push the following items to the right -->
       <!-- <li><a href="#/frens">Frens Selector Sample</a></li> hidden -->
@@ -39,8 +40,6 @@ ul {
   padding: 0;
   overflow: hidden;
 }
-
-li {}
 
 li a {
   display: block;

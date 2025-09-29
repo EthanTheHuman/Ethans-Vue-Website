@@ -5,7 +5,7 @@ import data from './Frens/FrensGameData.json'
 <template>
     <div class="container">
         <div class="left-column">
-            <FrensColumn :friends="FrensList" @toggleFriend="toggleFriend" />
+            <FrensColumn :friends="FrensList" :selectedFriends="selectedFriends" @toggleFriend="toggleFriend" />
         </div>
         <div class="right-column">
             <GamesList :games="filteredGames" />
@@ -89,31 +89,35 @@ h1 {
 
 /* Flexbox layout to make the two columns sit side by side */
 .container {
-    display: flex  !important;
-    justify-content: space-between;
-    /* Ensure space between columns */
+    display: flex !important;
+    flex-direction: row !important; /* Explicitly set to row layout */
+    height: 100%; /* Use full height of parent container */
+    width: 100%; /* Ensure full width */
     padding: 10px;
+    gap: 20px; /* Space between columns */
+    overflow: hidden; /* Prevent any overflow from this container */
+    box-sizing: border-box;
 }
 
 /* Style for the left column */
 .left-column {
-    flex: 1;
-    /* This means the left column will take up 1/3 of the available space */
+    flex: 0 0 auto; /* Don't grow, don't shrink, size based on content */
+    min-width: 250px; /* Minimum width for usability */
+    max-width: 350px; /* Maximum width to prevent it from getting too wide */
     padding-right: 10px;
-    border-right: 1px solid white;
+    overflow: visible; /* No scrolling in left column - it should fit its content */
+    height: fit-content; /* Height based on content */
+    max-height: 100%; /* Don't exceed container height */
 }
 
 /* Style for the right column */
 .right-column {
-    flex: 3;
-    /* This means the right column will take up 2/3 of the available space */
+    flex: 1; /* Take up remaining space */
     padding-left: 10px;
-    overflow-y: auto;
-    max-height: 100%;
-}
-
-/* Optional: Customize the background or borders to see the layout better */
-.left-column,
-.right-column {
+    border-left: 1px solid white;
+    overflow-y: auto; /* Only this column should scroll */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    height: calc(100% - 20px); /* Full height minus container padding */
+    box-sizing: border-box;
 }
 </style>

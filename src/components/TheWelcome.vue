@@ -87,6 +87,9 @@ svg {
   flex-wrap: nowrap;
   flex-direction: row-reverse;
   height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .grayed-out {
@@ -103,13 +106,14 @@ svg {
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  padding: 0 2rem;
+  padding: 0 1rem;
   width: 100%;
   height: 100%;
-  padding: 0 1rem;
   font-size: 1.2rem;
   line-height: 1.6;
   color: var(--color-text);
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .mainMenuSelect {
@@ -162,6 +166,7 @@ svg {
 .firecutin {
   max-width: 300px;
   width: 100%;
+  height: 100vh;
   flex: 0 0 auto;
   background-color: whitesmoke;
   object-fit: cover;

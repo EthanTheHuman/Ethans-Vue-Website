@@ -5,6 +5,7 @@ import Navbar from './components/NavBar.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import MultiverseCharacter from './components/MultiverseCharacter.vue'
 import Frens from './components/Frens.vue'
+import GameBacklog from './components/GameBacklog/GameBacklog.vue'
 
 const routes = {
   '/': TheWelcome,
@@ -12,6 +13,9 @@ const routes = {
   '/Multiverse': MultiverseCharacter,
   '/frens': Frens,
   '/Frens': Frens,
+  '/gamebacklog': GameBacklog,
+  '/GameBacklog': GameBacklog,
+  '/backlog': GameBacklog,
 }
 
 const currentPath = ref(window.location.hash)
@@ -51,42 +55,45 @@ body {
   margin: 0;
   padding: 0;
   color: white;
+  overflow-x: hidden;
 }
-
 
 /* Essentials */
 
 .container {
-  display: table;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent any scrolling on the main page */
+}
+
+.header {
+  flex: 0 0 auto; /* Don't grow or shrink, size based on content */
 }
 
 .content {
-  display: table-row;
-  height: 100%;
+  flex: 1; /* Take up remaining space */
+  overflow: hidden;
 }
 
 .content-body {
-  display: table-cell;
-}
-
-
-/* Aesthetics */
-
-.container {
   width: 100%;
   height: 100%;
-  color: black;
-  height: 100vh;
-  width: 100vw;
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent overflow in content area */
 }
+
+.footer {
+  flex: 0 0 auto; /* Don't grow or shrink, size based on content */
+}
+
+/* Aesthetics */
 
 .header,
 .footer {
   background: dodgerblue;
-}
-
-.content-body {
-  overflow: hidden;
 }
 </style>
 
