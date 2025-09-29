@@ -1,4 +1,13 @@
 <template>
+  <!-- 
+    Game Backlog Component
+    Features:
+    - Add games by searching SteamGridDB API
+    - Drag & drop to reorder priority
+    - Custom tags and names
+    - Import/Export backlog as JSON for transferring between browsers
+    - Filter by tags and sort by name/priority
+  -->
   <div class="game-backlog">
     <div class="header-section">
       <h1>Game Backlog</h1>
@@ -49,6 +58,22 @@
             class="view-button"
           >
             Name Order
+          </button>
+        </div>
+        
+        <div class="data-controls">
+          <button @click="exportBacklog" class="data-button export-button">
+            📤 Export
+          </button>
+          <input
+            ref="fileInput"
+            type="file"
+            accept=".json"
+            @change="handleImport"
+            style="display: none;"
+          />
+          <button @click="$refs.fileInput.click()" class="data-button import-button">
+            📥 Import
           </button>
         </div>
       </div>
@@ -322,6 +347,130 @@ export default {
       
       this.draggingIndex = null;
       this.saveToLocalStorage();
+    },
+    exportBacklog() {
+      try {
+        const exportData = {
+          version: '1.0',
+          exportDate: new Date().toISOString(),
+          games: this.backlogGames.map(game => {
+            const { tagInput, ...gameData } = game;
+            return gameData;
+          }),
+          nextId: this.nextId
+        };
+
+        const dataStr = JSON.stringify(exportData, null, 2);
+        const dataBlob = new Blob([dataStr], { type: 'application/json' });
+
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(dataBlob);
+        link.download = `game-backlog-${new Date().toISOString().split('T')[0]}.json`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        alert(`Successfully exported ${this.backlogGames.length} games!`);
+      } catch (error) {
+        console.error('Error exporting backlog:', error);
+        alert('Failed to export backlog. Please try again.');
+      }
+    },
+    handleImport(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      if (!file.name.endsWith('.json')) {
+        alert('Please select a valid JSON file.');
+        return;
+      }
+
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const importData = JSON.parse(e.target.result);
+          this.importBacklog(importData);
+        } catch (error) {
+          console.error('Error parsing JSON:', error);
+          alert('Invalid JSON file. Please check the file and try again.');
+        }
+      };
+      reader.readAsText(file);
+      
+      // Reset the input so the same file can be selected again if needed
+      event.target.value = '';
+    },
+    importBacklog(importData) {
+      try {
+        // Validate the import data structure
+        if (!importData.games || !Array.isArray(importData.games)) {
+          throw new Error('Invalid file format: missing games array');
+        }
+
+        // Ask user how to handle the import
+        const importChoice = confirm(
+          `This will import ${importData.games.length} games.\n\n` +
+          'Click "OK" to REPLACE your current backlog.\n' +
+          'Click "Cancel" to MERGE with your current backlog.'
+        );
+
+        let newGames = [...importData.games];
+        let newNextId = importData.nextId || this.nextId;
+
+        if (!importChoice) {
+          // Merge mode: Add new games that don't already exist
+          const existingGameNames = new Set(this.backlogGames.map(g => g.name.toLowerCase()));
+          const uniqueNewGames = importData.games.filter(game => 
+            !existingGameNames.has(game.name.toLowerCase())
+          );
+
+          // Reassign IDs to avoid conflicts
+          const maxExistingId = Math.max(...this.backlogGames.map(g => g.id), 0);
+          uniqueNewGames.forEach((game, index) => {
+            game.id = maxExistingId + index + 1;
+          });
+
+          newGames = [...this.backlogGames, ...uniqueNewGames];
+          newNextId = Math.max(newNextId, maxExistingId + uniqueNewGames.length + 1);
+
+          alert(`Successfully merged ${uniqueNewGames.length} new games into your backlog!`);
+        } else {
+          // Replace mode: Use imported data as-is
+          alert(`Successfully replaced your backlog with ${newGames.length} games!`);
+        }
+
+        // Validate and clean up the games data
+        newGames.forEach((game, index) => {
+          // Ensure required properties exist
+          if (!game.id) game.id = index + 1;
+          if (!game.name) game.name = 'Unknown Game';
+          if (!game.tags) game.tags = [];
+          if (!game.customName) game.customName = '';
+          if (typeof game.priority !== 'number') game.priority = index;
+          
+          // Remove tagInput if it exists (shouldn't be persisted)
+          delete game.tagInput;
+          
+          // Ensure tags are sorted
+          game.tags.sort();
+        });
+
+        // Update component state
+        this.backlogGames = newGames;
+        this.nextId = newNextId;
+        
+        // Update priorities to ensure they're sequential
+        this.backlogGames.forEach((game, index) => {
+          game.priority = index;
+        });
+
+        // Save to localStorage
+        this.saveToLocalStorage();
+
+      } catch (error) {
+        console.error('Error importing backlog:', error);
+        alert('Failed to import backlog: ' + error.message);
+      }
     },
     // Local storage methods
     saveToLocalStorage() {

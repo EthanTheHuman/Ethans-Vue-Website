@@ -26,6 +26,24 @@ h1 {
   margin-bottom: 20px;
   gap: 20px;
   width: 100%;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .view-controls,
+  .data-controls {
+    justify-content: center;
+  }
+  
+  .search-section {
+    margin-right: 0;
+    max-width: none;
+  }
 }
 
 .search-section {
@@ -153,6 +171,41 @@ h1 {
 .view-button.active {
   background: var(--main-color);
   border-color: var(--main-color);
+}
+
+.data-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.data-button {
+  padding: 8px 15px;
+  border: 2px solid #333;
+  border-radius: 6px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.data-button:hover {
+  background: #333;
+  border-color: #444;
+}
+
+.export-button:hover {
+  background: #1a5f1a;
+  border-color: #2d8f2d;
+}
+
+.import-button:hover {
+  background: #1a4a5f;
+  border-color: #2d6f8f;
 }
 
 .filter-section {
